@@ -174,3 +174,81 @@ console.log(total(20,30)); // 50
 ---
 
 ## 3. Template literals:
+ES6 представляет новые и простые в использовании строковые шаблоны с заполнителями для переменных.
+
+* Шаблонные литералы заключены в обратную галочку (``).
+* Вы можете использовать многострочные строки.
+* Вы можете использовать новый синтаксис `$ {variable_name}` внутри строки, помеченной галочкой.
+* До ES6 это называлось Template Strings.
+
+```js
+//Пример-1
+
+var num1 = 10;
+var num2 = 20;
+console.log(`The sum of ${num1} and ${num2} is ${num1 + num2}.`); 
+
+//Выведет: The sum of 10 and 20 is 30
+
+//Пример-2
+
+var TempBody = `Hello Users! Your are reading about ES6 Features,
+    In ES6, you are implementing Template Literals.
+    Let me show you the sum of ${num1} and ${num2} is ${num1 + num2}. 
+	Hope you have understood the concept of Template Literals.`;
+	
+console.log(TempBody);
+```
+
+---
+
+## 4. Object literals:
+Объектный литерал JavaScript представляет собой разделенный запятыми список пар имя-значение, заключенных в фигурные скобки.
+
+```js
+var myObject = {
+    title: 'ES6 Interview Questions and Answers',
+    topic: 'Object Literals',
+    status: true,
+	myFunction: () => {
+		// Блок кода
+	}
+};
+```
+
+---
+
+## 5. Default Parameters:
+Параметры функции по умолчанию позволяют инициализировать именованные параметры с некоторыми значениями по умолчанию, если значение не передано или не определено.
+
+```js
+//3-й параметр имеет значение по умолчанию ноль.
+
+let addNumbers = (a, b, c = 0) => {
+  return a + b + c;
+}
+
+console.log(addNumbers(1, 2, 2)); //5
+console.log(addNumbers(5, 20)); //25
+```
+
+---
+
+## Destructuring Assignment:
+Деструктурирующее присваивание - это специальный синтаксис, который позволяет вам «распаковывать» массивы или объекты в кучу переменных, так как иногда они более удобны.
+
+```js
+// у нас есть массив с именем, отчеством и фамилией
+let arr = ["Full", "Stack", "Tutorials"]
+
+// destructuring assignment
+let [first_name, middle_name, last_name] = arr;
+
+console.log(first_name); // Full
+console.log(middle_name); // Stack
+console.log(last_name); // Tutorials
+```
+
+---
+
+## 7. REST and Spread operator:
