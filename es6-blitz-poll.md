@@ -69,3 +69,108 @@ ECMAScript - это спецификация, определенная в ста
 ---
 
 ## 1. `let` и `const`:
+**`Const` Ключевое слово**:
+* Ключевое слово `const` используется для определения констант в ES6.
+  это также известно как неизменяемые переменные.
+* Значение константы не может быть изменено путем переназначения, и оно не может быть повторно объявлено.
+
+```js
+const MY_CONST = "Javascript ES6 Interview Questions";
+console.log(MY_CONST); 
+//Javascript ES6 Interview Questions
+MY_CONST = "ES6 Interview Questions";
+console.log(MY_CONST); 
+// Uncaught TypeError: Присвоение постоянной переменной,
+// потому что мы не можем переназначить новое значение константе
+```
+
+В случае `Object` и `Array` мы можем добавить в него новые элементы
+
+```js
+const myObject = {'name': 'Full Stack Tutorials'};
+// Если вы попытаетесь 
+// перезаписать / переназначить / переопределить объект,
+//  выдается ошибка.
+
+myObject = {'name': 'Full Stack Tutorials'}; 
+//Uncaught TypeError: Присвоение постоянной переменной.
+myObject = {'fullname': 'Full Stack Tutorials'}; 
+//Uncaught TypeError: Присвоение постоянной переменной..
+
+// Поскольку ключи объектов не защищены,
+//  приведенный ниже код будет успешно выполнен.
+myObject.name = 'Anonymous User'; 
+// Вы можете использовать Object.freeze (), 
+// чтобы сделать объект неизменным
+
+const myArray = ["Javascript", "Node.js", "React.js"];
+// Можно помещать элементы в массив
+myArray.push("jQuery");
+// Но присвоение нового массива той же переменной 
+// приведет к ошибке.
+
+myArray = ["jQuery"]; 
+//Uncaught TypeError: Присвоение постоянной переменной.
+```
+
+`Object.freeze()`
+>`Object.freeze` работает со значениями и делает объект неизменным.
+
+*`Object.freeze ()` принимает объект в качестве аргумента и возвращает тот же объект, что и неизменный объект*
+
+Как только вы заморозили объект, вы не можете изменять, добавлять или удалять свойства объекта, но вы можете назначить другой экземпляр.
+
+```js
+const myObject = {'name': 'Full Stack Tutorials'};
+Object.freeze(myObject);
+myObject.name = 'Anonymous User'; 
+// выдает ошибку в строгом режиме
+console.log(myObject.name); 
+// Выведет: Full Stack Tutorials
+```
+
+**`let` ключевое слово**:
+ES6 представляет новое ключевое слово `let`, которое позволяет нам объявлять локальные переменные в области видимости блока.
+
+Позволяет вам объявлять переменные, которые ограничены по видимости блоком, оператором или выражением, в котором они используются.
+
+```js
+let a = 10;
+funtion testMe(){
+	let a = 20;
+	console.log(a); // 20
+}
+console.log(a); // 10
+
+```
+
+---
+
+## 2. Функции стрелки:
+* Функция стрелки имеет более короткий синтаксис, чем обычная функция.
+* В функции Arrow `this` ключевого слова не существует.
+
+```js
+(param1, param2, …, paramN) => { 
+//statements or code
+}
+```
+
+```js
+//in ES5
+var sum = function(a, b) {
+return a + b; 
+};
+console.log(sum(10,40)); // 50
+
+----------------------------
+//in ES6
+var total = (x, y) => {
+	return (x + y);
+}
+console.log(total(20,30)); // 50
+```
+
+---
+
+## 3. Template literals:
