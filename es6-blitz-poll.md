@@ -1,4 +1,4 @@
-# # Часто задаваемые вопросы на интервью по ES6
+# Часто задаваемые вопросы на интервью по ES6
 
 <p align="center">
 <img src="img/es6-blitx-50.jpg" alt="logo-es6-blitz-poll">
@@ -55,20 +55,20 @@ ECMAScript - это спецификация, определенная в ста
 **Новые функции в ES6:**
 Лучшие 10 функций ES6, которые должен знать каждый разработчик JavaScript.
 
-1. Let и Const ключевые слова
-2. Arrow functions - стрелочные функции
-3. Template Literals - шаблонные литералы
-4. Object Literals - литералы объекта
-5. Default Parameters - параметры по умолчанию
-6. Destructuring Assignment - деструктурирующее присваивание
-7. Rest and Spread Operators - операторы rest и spread
-8. Modules, Classes, Iterators, Generators in ES6 - Модули, классы, итераторы и генераторы
-9. Promises in ES6 -Обещания
-10. Support for Map/Set & WeakMap/WeakSet 
+* а). Let и Const ключевые слова
+* b). Arrow functions - стрелочные функции
+* c). Template Literals - шаблонные литералы
+* d). Object Literals - литералы объекта
+* e). Default Parameters - параметры по умолчанию
+* f). Destructuring Assignment - деструктурирующее присваивание
+* g). Rest and Spread Operators - операторы rest и spread
+* h). Modules, Classes, Iterators, Generators in ES6 - Модули, классы, итераторы и генераторы
+* i). Promises in ES6 -Обещания
+* j). Support for Map/Set & WeakMap/WeakSet 
 
 ---
 
-## 1. `let` и `const`:
+## a). `let` и `const`:
 **`Const` Ключевое слово**:
 * Ключевое слово `const` используется для определения констант в ES6.
   это также известно как неизменяемые переменные.
@@ -146,7 +146,7 @@ console.log(a); // 10
 
 ---
 
-## 2. Функции стрелки:
+## b). Функции стрелки:
 * Функция стрелки имеет более короткий синтаксис, чем обычная функция.
 * В функции Arrow `this` ключевого слова не существует.
 
@@ -173,7 +173,7 @@ console.log(total(20,30)); // 50
 
 ---
 
-## 3. Template literals:
+## c). Template literals:
 ES6 представляет новые и простые в использовании строковые шаблоны с заполнителями для переменных.
 
 * Шаблонные литералы заключены в обратную галочку (``).
@@ -202,7 +202,7 @@ console.log(TempBody);
 
 ---
 
-## 4. Object literals:
+## d). Object literals:
 Объектный литерал JavaScript представляет собой разделенный запятыми список пар имя-значение, заключенных в фигурные скобки.
 
 ```js
@@ -218,7 +218,7 @@ var myObject = {
 
 ---
 
-## 5. Default Parameters:
+## e). Default Parameters:
 Параметры функции по умолчанию позволяют инициализировать именованные параметры с некоторыми значениями по умолчанию, если значение не передано или не определено.
 
 ```js
@@ -234,7 +234,7 @@ console.log(addNumbers(5, 20)); //25
 
 ---
 
-## Destructuring Assignment:
+## f). Destructuring Assignment:
 Деструктурирующее присваивание - это специальный синтаксис, который позволяет вам «распаковывать» массивы или объекты в кучу переменных, так как иногда они более удобны.
 
 ```js
@@ -251,7 +251,7 @@ console.log(last_name); // Tutorials
 
 ---
 
-## 7. REST and Spread operator:
+## g). REST and Spread operator:
 Оператор спреда, или три точки, (…) - это новый оператор, введенный в ES6. Это позволяет расширять итерируемый (например, Array) на составляющие его элементы.
 
 ```js
@@ -283,7 +283,7 @@ console.log(removeDuplicates(numbers));
 
 ---
 
-## 8. Class In ES6:
+## h). Class In ES6:
 
 ```js
 class User{
@@ -334,7 +334,7 @@ let _process = process();
 
 ---
 
-## 9. Promise:
+## i). Promise:
 
 >Обещания используются для обработки асинхронных операций в JavaScript.
 
@@ -371,7 +371,7 @@ promise.
 
 ---
 
-## 10. Map:
+## j). Map:
 Объект Map представляет собой простую карту  - ключ / значение.
 
 Любое значение (как объекты, так и примитивные значения) может использоваться в качестве ключа или значения. Синтаксис [ключ, значение].
@@ -390,7 +390,7 @@ console.log(hash);
 
 ---
 
-## Разница между функцией стрелки и обычной функцией в JavaScript?
+## 8. Разница между функцией стрелки и обычной функцией в JavaScript?
 Существуют следующие различия между функцией стрелки и обычной (обычной) функцией:
 
 **1. Syntax:**
@@ -463,7 +463,7 @@ console.log(myFunc.prototype);
 
 ---
 
-## Как бы вы фильтровали массив объектов в ES6?
+## 9. Как бы вы фильтровали массив объектов в ES6?
 
 ```javascript
 var testArray = [{"name":"Jai",  "age": 26},
