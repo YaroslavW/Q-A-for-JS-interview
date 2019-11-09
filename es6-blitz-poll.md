@@ -335,3 +335,59 @@ let _process = process();
 ---
 
 ## 9. Promise:
+
+>Обещания используются для обработки асинхронных операций в JavaScript.
+
+Обещание - это объект, который может быть возвращен синхронно из асинхронной функции.
+
+Обещание преодолеть проблему ада обратного вызова - **callback hell**.
+
+**Promise States**:
+* Fulfilled:будет вызвано `onFulfilled ()` (например, `resolve()` - разрешено был вызван)
+* Rejected: отклонено - вызывается `onRejected ()` (например, вызывается `reject ()`).
+* Pending: ожидание - исходное состояние, не выполнено и не отклонено.
+
+Promise Consumers: then, catch, finally
+
+```js
+var promise = new Promise(function(resolve, reject) { 
+const A = "fullstacktutorials"; 
+const B = "fullstacktutorials"
+if(A === B) { 
+	resolve(); 
+} else { 
+	reject(); 
+} 
+}); 
+
+promise. 
+	then(function () { 
+		console.log('Success, Your promise has been resolved successfully'); 
+	}). 
+	catch(function () { 
+		console.log('Something went wrong!'); 
+	}); 
+```
+
+---
+
+## 10. Map:
+Объект Map представляет собой простую карту  - ключ / значение.
+
+Любое значение (как объекты, так и примитивные значения) может использоваться в качестве ключа или значения. Синтаксис [ключ, значение].
+
+```js
+hash = new Map()
+hash.set("FullStackTutorials", "Learn Full Stack Tutorials free Online, Javascript ES6 Interview Questions")
+hash.set(1, 200);
+
+console.log(hash); 
+//Output: Map(2) {"FullStackTutorials" => 
+// "Learn Full Stack Tutorials free Online, Javascript ES6 Interview Questions",
+//  1 => 200}
+
+```
+
+---
+
+## Разница между функцией стрелки и обычной функцией в JavaScript?
