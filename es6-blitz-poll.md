@@ -391,3 +391,95 @@ console.log(hash);
 ---
 
 ## Разница между функцией стрелки и обычной функцией в JavaScript?
+Существуют следующие различия между функцией стрелки и обычной (обычной) функцией:
+
+**1. Syntax:**
+И Стрелка, и Нормальная (Обычная) функция имеют разный синтаксис.
+
+```js
+//Normal Function:
+
+let func = function myFunc(params){ 
+  // body of the function 
+}; 
+
+OR
+
+function myFunc(params){ 
+  // body of the function 
+}; 
+```
+
+```js
+//Arrow Function:
+
+let func = (params) => { 
+  // body of the function 
+}; 
+```
+
+**2. Использование `this` ключевого слова:**
+
+>В функциях Arrow нет привязки `this`
+
+В отличие от обычных функций, функции стрелок не имеют своего собственного `this`.
+
+```js
+let myFunc = { 
+	name: "Full Stack Tutorials", 
+	arrowFunc:() => { 
+		console.log(`Welcome to, ${this.name}`); 
+    // no 'this' binding 
+	}, 
+	regFunc(){	 
+		console.log(`Welcome to, ${this.name}`); 
+    // 'this' binding works 
+	} 
+}; 
+myFunc.arrowFunc(); 
+myFunc.regFunc(); 
+```
+
+**3. Используя `new` ключевое слово:**
+Функции со стрелками нельзя использовать как конструктор с `new`, это вызовет ошибку.
+
+```js
+let myFunc = () => {};
+let func = new myFunc(); 
+// Uncaught TypeError: myFunc is not a constructor
+```
+
+**4. Наличие объекта аргументов:**
+Функции стрелок не имеют своих собственных объектов аргументов. Следовательно, arguments - это просто ссылка на аргументы внутренней области.
+
+**5. Использование свойства прототипа:**
+Функции стрелок не имеют свойства прототипа.
+
+```js
+let myFunc = () => {};
+console.log(myFunc.prototype); 
+// undefined
+```
+
+---
+
+## Как бы вы фильтровали массив объектов в ES6?
+
+```javascript
+var testArray = [{"name":"Jai",  "age": 26},
+              {"name":"Shiv",  "age": 22},
+              {"name":"Anuj", "age": 5 },
+              {"name":"Jenny", "age": 20 }];
+var data = testArray.filter(person => person.age > 18); 
+//Filters the Array of Objects to condition set
+console.log(data);
+/*
+0:{name: "Jai", age: 26}
+1:{name: "Shiv", age: 22}
+2:{name: "Jenny", age: 20}
+length:3
+*/
+```
+
+---
+---
