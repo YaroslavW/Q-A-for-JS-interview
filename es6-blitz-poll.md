@@ -252,3 +252,86 @@ console.log(last_name); // Tutorials
 ---
 
 ## 7. REST and Spread operator:
+Оператор спреда, или три точки, (…) - это новый оператор, введенный в ES6. Это позволяет расширять итерируемый (например, Array) на составляющие его элементы.
+
+```js
+const t = [1, 2, 3];
+
+const s = [...t, 4, 5, 6];
+
+console.log(s); 
+// [1, 2, 3, 4, 5, 6];
+```
+
+**Пример: - Удалить дубликаты элементов из массива с помощью ES6 Set?**
+
+>Объект Set позволяет хранить уникальные значения любого типа, будь то примитивные значения или объект
+
+Вот одна строка для удаления дубликатов из массива. (ES6, конечно!)
+
+```js
+const numbers = [1, 2, 3, 4, 5, 5, 5, 5, 5, 5];
+
+function removeDuplicates(array) {
+  return [...new Set(array)];
+}
+console.log(removeDuplicates(numbers));
+ // [1, 2, 3, 4, 5]
+```
+
+Набор - `Set` был введен в ES6 и похож на наборы, с которыми мы сталкиваемся в математике: они не могут иметь дубликаты. После этого мы просто конвертируем `Set` обратно в массив, используя оператор распространения - `...`.
+
+---
+
+## 8. Class In ES6:
+
+```js
+class User{
+    constructor(name, age) {
+        this.name  = name;
+        this. age = age;
+    }
+   getUserDetails() {
+        console.log(this.name + " is " + this. age + " years old!");
+    }
+}
+
+var userObj = new User("Full Stack Tutorials", 5);
+console.log(userObj.getUserDetails());
+
+//Вывод: Full Stack Tutorials is 5 years old!
+```
+**Генераторы**
+
+Генератор - это функция, которая может остановиться на полпути, а затем продолжить с того места, где остановилась. Короче говоря, генератор выглядит как функция, но ведет себя как итератор.
+
+```js
+function* process() {
+    console.log('Start process 1');
+    console.log('Pause process2 until call next()');
+
+    yield;
+
+    console.log('Resumed process2');
+    console.log('Pause process3 until call next()');
+
+    yield;
+
+    console.log('Resumed process3');
+    console.log('End of the process function');
+}
+
+let _process = process();
+```
+**yield**:
+* Ключевое слово `yield` просто помогает приостановить и возобновить функцию в любое время асинхронно.
+* Кроме того, это помогает вернуть значение из функции генератора.
+
+**в использовании**
+* Ленивая оценка -Lazy evaluation
+* Бесконечные последовательности - Infinite sequences
+* Асинхронные потоки управления - Asynchronous control flows
+
+---
+
+## 9. Promise:
