@@ -247,3 +247,90 @@ MongoClient.connect('mongodb://localhost:27017/test_db', function (err, db) {
 ---
 
 ## 9. Обработка ошибок в Express Js и Как перенаправить ошибки 404 на страницу в Express Js?
+
+```js
+var express = require('express'),
+app = express();
+
+app.use(function (err, req, res, next) {
+  console.error(err.stack)
+  res.status(500).send('Something went wrong, Express Js Interview Questions')
+})
+```
+
+```js
+//To redirect 404 errors
+var express = require('express'),
+app = express();
+
+app.use(function(req, res, next) {
+    res.status(404).json({
+		errorCode: 404, 
+		errorMsg: "route not found"
+	});
+});
+```
+
+---
+
+## 10. Как реализовать аутентификацию JWT в приложении Express? Объясните с примером?
+
+* Создайте папку с именем «`keys`» внутри папки проекта.
+* Установите некоторые зависимости следующим образом: `npm install jsonwebtoken –-save`
+* Добавьте логин маршрутизатора `routes/index.js`
+
+```javascript
+router.post('/login, function(req, res) {
+  // find the user
+  User.findOne({
+    name: req.body.username
+  }, function(err, res) {
+    if (err) throw err;
+    if (!res) {
+      res.json({ success: false, message: Login failed.' });
+    } else if (res) {
+
+      // check if password matches
+      if (res.password != req.body.password) {
+        res.json({ success: false, message: Login  failed. Wrong password.' });
+      } else {
+        var token = jwt.sign(res, app.get('superSecret'), {
+          expiresInMinutes: 1600 
+        });
+        // return the information including token as JSON
+        res.json({
+          success: true,
+          message: 'Valid token!',
+          token: token
+        });
+      }   
+   }  });
+});
+```
+
+* Используйте токен в приложении
+
+```javascript
+jwt = require("express-jwt");
+app.use(function(req, res, next) {
+  var token = req.body.token || req.query.token || req.headers['x-access-token'];
+  if (token) {
+    jwt.verify(token, app.get('superSecret'), function(err, decoded) {      
+      if (err) {
+        return res.json({ success: false, message: 'Invalid token.' });    
+      } else {
+        req.decoded = decoded;    
+        next();
+      }
+    });
+  } else {
+    return res.status(403).send({ 
+        success: false, 
+        message: 'No token given.' 
+    });    
+  }
+});
+```
+
+---
+---
