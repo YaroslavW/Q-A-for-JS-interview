@@ -159,7 +159,50 @@ store.subscribe();
 
 ---
 
-## 8. Что такое чистые функции?
+## 8. Зачем многие создают типы действий NAME_REQUEST / NAME_SUCCESS ? А заодно, что такое «действие», а что такое «создатель действия»…
+Для асинхронных действий многие используют подход, в котором есть «имядействия + request (запрос) _или + success (успех) или + failure (ошибка)». Таким образом удобно обрабатывать случившиеся ситуации в редьюсере (например, показать/скрыть прелоадер, показать ошибку или результат). Конечно, «показывает» — компонент, а в редьюсере мы лишь устанавливаем данные.
+
+Действие (action) — это простой объект с обязательным полем type и не обязательным payload (либо любым другим). Есть соглашение standard flux action (flux, потому что redux переосмыслил/развил идею flux).
+
+Создатель действия (action creator) — это функция, которая возвращает действие.
+
+Пример создателя действия:
+```js
+function addToto() {
+  return {
+    type: ADD_TODO,
+    payload: 'Пройти собеседование',
+  }
+}
+```
+Пример действия (напоминаю, это простой объект):
+```js
+{
+  type: ADD_TODO,
+  payload: 'Пройти собеседование',
+}
+```
+
+---
+## 9.  Можете написать простой редьюсер без react/redux?
+Да. Метод `reduce()` применяет функцию reducer к каждому элементу массива (слева-направо), возвращая одно результирующее значение.
+```js
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+3
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+7
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+// expected output: 15
+11
+```
+
+---
+
+## 10. Что такое чистые функции?
 Чистая функция - это функция, которая
 
 1. всегда возвращать один и тот же вывод для одного и того же входа
@@ -173,7 +216,7 @@ const add = (a, b) => a + b // A pure function
 
 ---
 
-## 9. В чем разница между Flux и Redux?
+## 11. В чем разница между Flux и Redux?
 
 > Flux - это шаблон проектирования, а Redux - библиотека.
 
@@ -187,11 +230,34 @@ const add = (a, b) => a + b // A pure function
 
 ---
 
-## 10. Может ли Redux использоваться только с React?
+## 12. Может ли Redux использоваться только с React?
 Нет, Redux можно использовать как хранилище данных. чаще всего используется с React.js и React Native.
 
 Redux также можно использовать с Angular, Vue.js и т. д.
 
 ---
 
-## 11. 
+## 13. Для чего нужен redux-thunk? Как он работает? Напишите (можно псевдокод) асинхронный создатель действия (либо, если надоело говорить «терминами» — асинхронный aciton)
+Redux-thunk нужен для того, чтобы внутри создателя действия у вас была функция dispatch, чтобы с помощью нее «диспатчить» другие действия. Код redux-thunk’a состоит из 14 строк.
+```js
+function createThunkMiddleware(extraArgument) {
+  return ({ dispatch, getState }) => (next) => (action) => {
+    if (typeof action === 'function') {
+      return action(dispatch, getState, extraArgument);
+    }
+
+    return next(action);
+  };
+}
+
+const thunk = createThunkMiddleware();
+thunk.withExtraArgument = createThunkMiddleware;
+
+export default thunk;
+```
+
+Чтобы понимать как это работает, нужно знать как работают middleware.
+https://github.com/rajdee/redux-in-russian/blob/master/docs/advanced/Middleware.md
+
+---
+---
