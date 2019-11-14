@@ -1,4 +1,4 @@
-# # Redux Интервью Вопросы и ответы
+# Redux Интервью Вопросы и ответы
 
 ![logo-redux](img/redux-bliz-50.jpg)
 
