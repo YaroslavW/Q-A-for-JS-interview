@@ -318,3 +318,4 @@ Java: `graphql-java`
 
 ---
 ---
+Eсли вы затрудняетесь с ответами на некоторые вопросы, то рекомендую вам посетить сайт, где для вас приготовлено много обучающих материалов на английском языке. [GraphQL Tutorial](https://www.opencodez.com/web-development/graphql-tutorial-1-introduction-graphql.htm)
