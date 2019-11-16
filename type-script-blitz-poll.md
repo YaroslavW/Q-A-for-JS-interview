@@ -88,8 +88,8 @@ TypeScript состоит в основном из трех компоненто
 
 <p align="center">
 <img src="img/ts-1.jpg">
-<span> Компоненты TypeScript</span>
 </p>
+<center> Компоненты TypeScript</center>
 
 **Language**
 
@@ -133,8 +133,8 @@ $ npm install -g typescript
 
 <p align="center">
 <img src="img/ts-2.jpg">
-<span>Built-in types in Typescript</span>
 </p>
+<center>Built-in types in Typescript</center>
 
 **Number type**: используется для представления значений числового типа. Все числа в TypeScript сохраняются как значения с плавающей точкой.
 
