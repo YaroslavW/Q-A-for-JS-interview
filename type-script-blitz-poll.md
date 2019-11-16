@@ -89,7 +89,7 @@ TypeScript состоит в основном из трех компоненто
 <p align="center">
 <img src="img/ts-1.jpg">
 </p>
-<center> Компоненты TypeScript</center>
+<center align="center"> Компоненты TypeScript</center>
 
 **Language**
 
