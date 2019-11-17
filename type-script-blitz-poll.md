@@ -89,7 +89,7 @@ TypeScript состоит в основном из трех компоненто
 <p align="center">
 <img src="img/ts-1.jpg">
 </p>
-<center align="center"> Компоненты TypeScript</center>
+<p align="center"> Компоненты TypeScript</p>
 
 **Language**
 
@@ -404,3 +404,6 @@ $tsc --target ES5 --experimentalDecorators
 ---
 
 ## 26. 
+https://www.javatpoint.com/typescript-interview-questions
+
+Выравнять подпсь к фото п  центру
