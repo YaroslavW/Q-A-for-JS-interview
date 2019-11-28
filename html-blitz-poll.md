@@ -116,4 +116,40 @@ MIME (Multipurpose Internet Mail Extensions, многоцелевые расши
 
 ---
 
-## 7.
+## 7. Чем полезны data- атрибуты?
+
+HTML5 спроектирован с возможностью расширения данных ассоциированных с каким-либо элементом, но в то же время не обязательно имеющих определённое значение. `data-*` атрибуты позволяют хранить дополнительную информацию в стандартных элементах HTML, без хаков вроде нестандартных атрибутов, лишних DOM-свойств или `Node.setUserData()`.
+
+Синтаксис HTML
+
+```html
+<article
+  id="electriccars"
+  data-columns="3"
+  data-index-number="12314"
+  data-parent="cars"
+></article>
+```
+
+Доступ в JavaScript
+
+```js
+var article = document.getElementById("electriccars");
+article.dataset.columns; // "3"
+article.dataset.indexNumber; // "12314"
+article.dataset.parent; // "cars"
+```
+
+Доступ в CSS
+
+```css
+article::before {
+  content: attr(data-parent);
+}
+```
+
+Подробнее: https://developer.mozilla.org/ru/docs/Web/Guide/HTML/Using_data_attributes
+
+---
+
+## 8.
