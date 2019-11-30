@@ -379,3 +379,33 @@ _Второе отличие_ – скрипт с `defer` сработает, к
 ---
 
 ## 22. Расскажите о meta-теге с name=viewport
+Типичный сайт, оптимизированный для мобильных устройств, содержит следующий мета-тег:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+Свойство `width` определяет размер окна просмотра. Он может быть установлен на определенное количество пикселей, скажем,`width=600` или на специальное значение `device-width`, которое означает ширину экрана в пикселях CSS в масштабе `100%`. (Есть также соответствующие значения `height` и `device-height`, которые могут быть полезны для страниц с элементами, которые изменяют размер или положение на основе высоты окна просмотра).
+
+Свойство `initial-scale` контролирует уровень масштабирования при первой загрузке страницы. Свойства `maximum-scale`, `minimum-scale` и `user-scalable` определяют, как пользователям разрешено увеличивать или уменьшать страницу.
+
+`"user-scalable=no"` запрещается любое масштабирование
+
+Подброней: https://developer.mozilla.org/ru/docs/Mozilla/Mobile/Viewport_meta_tag
+
+---
+
+## 23. Какие теги практически обязательно должны быть в ```head```?
+
+```html
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Use the content="ie-edge" tag if your project
+    supports Internet Explorer prior to version 11. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Page Title</title>
+```
+
+Много больше информации о том, что должно быть в head: https://gethead.info/
+
+---
+
+## 24. 
