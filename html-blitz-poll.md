@@ -491,4 +491,42 @@ _Второе отличие_ – скрипт с `defer` сработает, к
 
 ---
 
-## 31. 
+## 31. Что такое элемент `output` в HTML 5?
+
+Элемент `output` требуется, когда вы хотите отобразить сумму двух введённых чисел в виде текста. Например, у вас есть два поля для ввода и вы хотите сложить числа из этих двух полей и отобразить их сумму в виде текста. Ниже приведён пример использования элемента `output` в HTML 5:
+
+```html
+<form onsubmit="return false" oninput="o.value = parseInt(a.value) + parseInt(b.value)">
+	<input name="a" type="number"> +
+	<input name="b" type="number"> =
+	<output name="o" />
+</form>
+```
+
+Вы можете заменить «`parseInt`» на «`valueAsNumber`» для простоты. Также вы можете использовать атрибут «`for`» элемента `output` для повышения читаемости.
+
+```html
+<output name="o" for="a b"></output>
+```
+
+Подробней: http://htmlbook.ru/blog/element-output
+
+---
+
+## 32. Что такое свойство `valueAsNumber`?
+
+В HTML5 представлено свойство JavaScript `valueAsNumber` для полей формы (в частности: `number`, `date`, `range`). Оно возвращает значение в виде числа, а не строки, то есть нам больше не нужно использовать `parseInt` или `parseFloat`, и оператор `+` складывает, а не склеивает.
+
+```html
+<form onsubmit="return false" oninput="o.value = a.valueAsNumber + b.valueAsNumber">
+	<input name="a" id="a" type="number" step="any"> +
+	<input name="b" id="b" type="number" step="any"> =
+	<output name="o" for="a b"></output>
+</form>
+```
+
+Подробней: http://htmlbook.ru/blog/element-output
+
+---
+
+## 33. 
