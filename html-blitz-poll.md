@@ -443,3 +443,52 @@ _Второе отличие_ – скрипт с `defer` сработает, к
 * `top` - Отменяет все фреймы и загружает страницу в полном окне браузера, если фреймов нет, то это значение работает как `self`.
 
 Подробней: http://htmlbook.ru/html/a/target
+
+---
+
+## 28. Что такое абсолютная и относительная ссылка?
+
+```html
+<a href=”http://google.com/example.html”>Абсолютная ссылка</a>
+
+<a href=”../../example.html”>Относительная ссылка</a>
+```
+
+---
+
+## 29. Какие новые элементы форм введены в HTML 5?
+
+**В HTML 5 введены десять новых важных элементов форм**:
+* Color;
+* Date;
+* Datetime-local;
+* Email;
+* Time;
+* Url;
+* Range;
+* Telephone;
+* Number;
+* Search;
+
+---
+
+## 30. Что такое элемент datalist в HTML 5?
+
+Элемент datalist в HTML 5 помогает реализовать функцию автозаполнения в поле для ввода.
+
+```html
+<input list="Country">
+<datalist id="Country">
+	<option value="India">
+	<option value="Italy">
+	<option value="Iran">
+	<option value="Israel">
+	<option value="Indonesia">
+</datalist>
+```
+
+Подробней: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
+
+---
+
+## 31. 
