@@ -645,4 +645,14 @@ WebGL (Web-based Graphics Library) — программная библиотек
 
 ---
 
-## 44. 
+## 44. Перечислите блочные элементы, которые Вам известны(хотя бы 5).
+
+```html
+<address>, <article>, <aside>, <audio>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <fieldset>, <figcaption>, <figure>, <footer>, <form>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <header>, <hgroup>, <hr>, <li>, <main>, <nav>, <noscript>, <ol>, <output>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>, <video>
+```
+
+Подробней: https://developer.mozilla.org/ru/docs/Web/HTML/Block-level_elements
+
+---
+
+## 45. 
