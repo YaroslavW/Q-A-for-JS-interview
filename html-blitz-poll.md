@@ -699,4 +699,12 @@ button, input, label, select, textarea
 
 ---
 
-## 47. 
+## 47. На какие события `video` или `audio` можно подписаться?(Кандидат может не знать ни одного. Это легко гуглится в работе)
+
+*abort, canplay, ended, loadstart, pause, play, playing*
+
+Подробней: https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Media_events
+
+---
+
+## 48
