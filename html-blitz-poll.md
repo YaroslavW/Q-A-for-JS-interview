@@ -718,9 +718,9 @@ button, input, label, select, textarea
 
 ---
 
-## 49. Для чего нужен тег noscript?
+## 49. Для чего нужен тег `noscript`?
 
-Элемент HTML noscript определяет секцию html кода, которая будет вставлена, если в браузере пользователя нет либо отключена поддержка JavaScript'а.
+Элемент HTML `noscript` определяет секцию html кода, которая будет вставлена, если в браузере пользователя нет либо отключена поддержка JavaScript'а.
 
 Подробней: https://developer.mozilla.org/ru/docs/Web/HTML/Element/noscript
 
