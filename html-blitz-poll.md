@@ -767,4 +767,12 @@ button, input, label, select, textarea
 
 ---
 
-## 54.
+## 54. Какие теги запрещены в html5? (хотя бы 3, не страшно если ни одного)
+
+```html
+<applet> <ins> <col />, <colgroup> <area /> <basefont /> <center> <bdo> <dir> <font> <frame /> <frameset> <iframe> <isindex> <noframes> <strike> <u> <tbody> <tfoot> <thead>
+```
+
+---
+
+## 55. 
