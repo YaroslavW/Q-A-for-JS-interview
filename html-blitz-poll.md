@@ -839,3 +839,7 @@ button, input, label, select, textarea
 ---
 
 # Часть 2
+
+## Вопросы по CSS
+
+---
