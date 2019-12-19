@@ -918,4 +918,18 @@ button, input, label, select, textarea
 
 ---
 
-## 6. 
+## 6. Какие вы знаете методы запрета обтекания (`clearing`) и какие где применяются?
+
+Хак: для очистки плавающих элементов лучше применять ‘`overflow:auto`’ к родительскому элементу.
+
+```css
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+```
+
+---
+
+## 7. 
