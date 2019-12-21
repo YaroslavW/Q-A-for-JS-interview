@@ -960,4 +960,12 @@ left: -5000px;
 
 ---
 
-## 10. 
+## 10. Вы когда-нибудь использовали сеточную верстку (grid system, grid design)? Если да, какая Ваша любимая?
+
+grid design: https://habrahabr.ru/post/23792/
+
+grid system: http://htmlbook.ru/blog/css-grid-i-flexbox-sravnenie-na-praktike
+
+---
+
+## 11. 
