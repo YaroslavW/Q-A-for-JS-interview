@@ -1015,4 +1015,14 @@ _Flex-блоки_ лучше всего подходят для составны
 
 ---
 
-## 15. 
+## 15. Какое правило `flexbox` задает вывод `flex items` в одну строку или в несколько строк?
+
+Свойство CSS `flex-wrap`
+
+`nowrap` | `wrap` | `wrap-reverse`
+
+Подробней: https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox
+
+---
+
+## 16. 
