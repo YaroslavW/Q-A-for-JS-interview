@@ -1025,4 +1025,17 @@ _Flex-блоки_ лучше всего подходят для составны
 
 ---
 
-## 16. 
+## 16. `flex-flow` сокращение, расскажите?
+
+На этом этапе нужно заметить, что сществует сокращение для свойств `flex-direction` и `flex-wrap` — `flex-flow`. Например, вы можете заменить
+
+`flex-direction: row;`
+`flex-wrap: wrap;`
+
+`flex-flow: row wrap;`
+
+Подробней: https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox
+
+---
+
+## 17.
