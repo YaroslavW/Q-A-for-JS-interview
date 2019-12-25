@@ -1088,6 +1088,12 @@ article:nth-of-type(3) {
 Не поддерживается. Только в IE10+.
 
 Также как существует `inline-block`, `inline-table`, `inline-flex`, существует и `inline-grid`
+
+Подробней:
+* https://habrahabr.ru/post/273471/#display
+* https://habrahabr.ru/post/325760/
+* https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout
+
 ---
 
 ## 21. 
