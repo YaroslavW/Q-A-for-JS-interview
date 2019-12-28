@@ -1172,4 +1172,7 @@ https://medium.com/@dedguran/введение-в-методологию-бэм-e
 
 ---
 
-## 26.
+## 26. Какие еще методологии верстки вы знаете?
+
+https://habrahabr.ru/post/256109/
+https://operatino.github.io/MCSS/
