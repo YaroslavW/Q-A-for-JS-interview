@@ -46,4 +46,13 @@ Web Workers предоставляют простое средство для з
 
 ---
 
-## 7.
+## 7. Что такое неопределенные (`undefined`) и необъявленные (`undeclared`) переменные?
+
+* `undefined` - значение
+* `undeclared`- ошибка ReferenceError
+
+Подробней: https://habrahabr.ru/post/159313/
+
+---
+
+## 8.
