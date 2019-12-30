@@ -22,4 +22,13 @@ Web Workers предоставляют простое средство для з
 
 ---
 
-## 4.
+## 4. Как создать поток web worker в JavaScript?
+
+Подробней:
+
+- https://developer.mozilla.org/ru/docs/DOM/Using_web_workers
+- https://habrahabr.ru/post/132785/
+
+---
+
+## 5.
