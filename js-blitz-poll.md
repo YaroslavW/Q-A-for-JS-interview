@@ -37,4 +37,13 @@ Web Workers предоставляют простое средство для з
 
 ---
 
-## 6.
+## 6. Зачем в HTML 5 введены события `server-sent`?
+
+Подробней:
+
+- https://ru.wikipedia.org/wiki/Server-sent_events
+- https://habrahabr.ru/post/120429/
+
+---
+
+## 7.
