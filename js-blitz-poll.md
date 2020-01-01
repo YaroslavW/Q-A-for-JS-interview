@@ -48,11 +48,20 @@ Web Workers предоставляют простое средство для з
 
 ## 7. Что такое неопределенные (`undefined`) и необъявленные (`undeclared`) переменные?
 
-* `undefined` - значение
-* `undeclared`- ошибка ReferenceError
+- `undefined` - значение
+- `undeclared`- ошибка ReferenceError
 
 Подробней: https://habrahabr.ru/post/159313/
 
 ---
 
-## 8.
+## 8.Замыкания — это функции, ссылающиеся на независимые (свободные) переменные. Другими словами, функция, определённая в замыкании, «запоминает» окружение, в котором она была создана.
+
+Подробней
+
+- https://htmlacademy.ru/blog/195-lets-learn-javascript-closures
+- https://habrahabr.ru/post/38642/
+
+---
+
+## 9.
