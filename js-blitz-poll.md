@@ -208,3 +208,12 @@ console.log(foo === null); // true
 console.log(typeof foo === ‘object’); // true
 console.log(foo == undefined); // true. Неправильно, не используйте это для проверки!
 ```
+Личная привычка — я никогда не оставляю свои переменные необъявленными или неприсвоенными. Я явно назначаю им null после объявления, если я не собираюсь их пока использовать. Если вы используете линтер в своем рабочем процессе, он обычно также проверяет, что вы не ссылаетесь на необъявленные переменные.
+
+Ссылки
+* https://stackoverflow.com/questions/15985875/effect-of-declared-and-undeclared-variables
+* https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/undefined
+
+---
+
+## 19.
