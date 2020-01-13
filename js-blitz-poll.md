@@ -224,8 +224,15 @@ console.log(foo == undefined); // true. Неправильно, не испол�
 
 ### Для чего его используют?
 
-* Конфиденциальность данных / эмуляция скрытых методов при помощи замыканий. Обычно используется в [модульном паттерне](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript).
+- Конфиденциальность данных / эмуляция скрытых методов при помощи замыканий. Обычно используется в [модульном паттерне](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript).
 
-* [Частичное применение функций или каррирование.](https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8)
+- [Частичное применение функций или каррирование.](https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8)
+
+Ссылки
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+- https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36
 
 ---
+
+## 20.
