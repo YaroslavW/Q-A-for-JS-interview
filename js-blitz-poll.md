@@ -301,3 +301,12 @@ const double = arr.map(function(el) {
 });
 console.log(double); // [2, 4, 6]
 ```
+
+Ссылки
+
+- https://www.quora.com/What-is-a-typical-usecase-for-anonymous-functions
+- https://stackoverflow.com/questions/10273185/what-are-the-benefits-to-using-anonymous-functions-instead-of-named-functions-fo
+
+---
+
+## 22.
