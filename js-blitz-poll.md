@@ -291,3 +291,13 @@ setTimeout(function() {
   console.log("Hello world!");
 }, 1000);
 ```
+
+Аргументы в конструкциях функционального программирования или Lodash (аналогично callback-функциям).
+
+```js
+const arr = [1, 2, 3];
+const double = arr.map(function(el) {
+  return el * 2;
+});
+console.log(double); // [2, 4, 6]
+```
