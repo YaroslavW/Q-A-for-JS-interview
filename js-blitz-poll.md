@@ -328,4 +328,29 @@ console.log(double); // [2, 4, 6]
 
 ---
 
-## 24. 
+## 24. В чем разница между: `function Person(){}`, `var person = Person()`, и `var person = new Person()`?
+
+Этот вопрос не совсем понятен. Я полагаю, что суть вопроса о конструкторах в JavaScript. Строго говоря, `function Person(){}` — это обычное объявление функции. Принято называть с заглавной буквы функции, которые предназначены для использования в качестве конструкторов.
+
+`var person = Person()` вызывает `Person` как функцию, а не как конструктор. Вызов как таковой является распространенной ошибкой, если функция предназначена для использования в качестве конструктора. Как правило, конструктор ничего не возвращает, поэтому при вызове конструктора как обычной функции возвращается undefined, и это присваивается переменной, предназначенной в качестве экземпляра.
+
+`var person = new Person()` создает экземпляр объекта `Person` с помощью оператора `new`, который наследуется от `Person.prototype`. Альтернативой может быть использование `Object.create`, например: `Object.create(Person.prototype)`.
+
+```js
+function Person(name) {
+  this.name = name;
+}
+var person = Person(‘John’);
+console.log(person); // undefined
+console.log(person.name); // Uncaught TypeError: Cannot read property ‘name’ of undefined
+var person = new Person(‘John’);
+console.log(person); // Person { name: “John” }
+console.log(person.name); // “john”
+```
+
+Ссылки
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new
+
+---
+
+## 25.
