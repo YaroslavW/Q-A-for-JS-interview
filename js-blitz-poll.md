@@ -324,7 +324,8 @@ console.log(double); // [2, 4, 6]
 Хост-объекты предоставляются средой выполнения (браузером или Node), такие как `window`, `XMLHTTPRequest` и т.д.
 
 Ссылки
-* https://stackoverflow.com/questions/7614317/what-is-the-difference-between-native-objects-and-host-objects
+
+- https://stackoverflow.com/questions/7614317/what-is-the-difference-between-native-objects-and-host-objects
 
 ---
 
@@ -349,8 +350,23 @@ console.log(person.name); // “john”
 ```
 
 Ссылки
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new
 
 ---
 
-## 25.
+## 25. В чем разница между `.call` и `.apply`?
+
+Сходство заключается в том, что и `.call`, и `.apply` используются для вызова функций, а также первый параметр будет использоваться как значение `this` внутри функции. А разница в том, что `.call` в качестве следующих аргументов принимает аргументы, разделенные запятыми, в то время как `.apply` в качестве следующих аргументов принимает массив аргументов.
+
+```js
+function add(a, b) {
+  return a + b;
+}
+console.log(add.call(null, 1, 2)); // 3
+console.log(add.apply(null, [1, 2])); // 3
+```
+
+---
+
+## 26.
