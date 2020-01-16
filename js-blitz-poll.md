@@ -317,4 +317,15 @@ console.log(double); // [2, 4, 6]
 
 ---
 
-## 23. 
+## 23. В чем разница между host-объектами и нативными объектами?
+
+Нативные объекты — это объекты, которые являются частью языка JavaScript, определенного в спецификации ECMAScript, такие как String, Math, RegExp, Object, Function и т.д.
+
+Хост-объекты предоставляются средой выполнения (браузером или Node), такие как `window`, `XMLHTTPRequest` и т.д.
+
+Ссылки
+* https://stackoverflow.com/questions/7614317/what-is-the-difference-between-native-objects-and-host-objects
+
+---
+
+## 24. 
