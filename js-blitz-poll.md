@@ -414,3 +414,14 @@ if (document.getElementsByTagName) {
 ```
 Этот подход не рекомендуется. Первый подход более надежен.
 
+### Строка User Agent
+Это строка, сообщаемая браузером, которая позволяет узлам сетевого протокола определить тип приложения, операционную систему, поставщика программного обеспечения или версию программного обеспечения пользователя от которого исходит запрос. Доступ к ней можно получить через `navigator.userAgent`. Тем не менее, строка User Agent сложна для обработки и может быть подделана. Например, браузер Chrome идентифицируется как Chrome, так и Safari. Таким образом, чтобы обнаружить браузер Safari, вы должны проверить на наличие строки Safari и отсутствие строки Chrome. Избегайте этого метода.
+
+Ссылки
+* https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection
+* https://stackoverflow.com/questions/20104930/whats-the-difference-between-feature-detection-feature-inference-and-using-th
+* https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent
+
+---
+
+## 29. 
