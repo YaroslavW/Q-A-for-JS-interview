@@ -533,4 +533,24 @@ console.log(bar); // [Function: bar]
 
 ---
 
+## 34. В чем разница между "атрибутом" (attribute) и "свойством" (property)?
+Атрибуты определены в разметке HTML, а свойства определены в DOM. Чтобы проиллюстрировать разницу, представьте, что у нас есть это текстовое поле в HTML: 
+```js
+<input type="text" value="Hello">.
+const input = document.querySelector('input');
+console.log(input.getAttribute('value')); // Hello
+console.log(input.value); // Hello
+```
+Но после того, как вы измените значение текстового поля, добавив к нему "`World!`", будет:
+```js
+`console.log(input.getAttribute('value')); // Hello
+console.log(input.value); // Hello World!
+```
+Ссылки
+* https://stackoverflow.com/questions/6003819/properties-and-attributes-in-html
+
+
+---
+
+
 ## 34. 
