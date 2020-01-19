@@ -564,4 +564,15 @@ console.log(input.value); // Hello World!
 
 ---
 
-## 35. 
+## 35. В чем разница между событием `load` и событием `DOMContentLoaded`?
+Событие `DOMContentLoaded` вызывается, когда исходный HTML-документ полностью загружен и обработан, не дожидаясь окончания загрузки таблиц стилей, изображений и скриптов.
+Событие `load` происходит только после загрузки DOM и всех зависимых ресурсов.
+
+Ссылки
+
+* https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded
+* https://developer.mozilla.org/en-US/docs/Web/Events/load
+
+---
+
+## 36.
