@@ -442,17 +442,16 @@ for (key in arr) {
 Пример:
 
 ```js
-let arr = ["AUDI A8", "2019", "brown"];
-arr.cost = "$100.000";
+let arr = [3, 5, 7];
+arr.foo = "hello";
 
-for (key in arr) {
-  console.log(`${key} = ${arr[key]}`);
+for (let i in arr) {
+  console.log(i); // выводит "0", "1", "2", "foo"
 }
 
-// 0 = AUDI A8
-// 1 = 2019
-// 2 = brown
-// cost = $100.000
+for (let i of arr) {
+  console.log(i); // выводит "3", "5", "7"
+}
 ```
 
 ---
@@ -469,7 +468,7 @@ for (key in arr) {
 
 ## 28. Объясните, как читать и писать файл с помощью JavaScript?
 
-- Функции [readFile()]() используются для операции чтения.
+- Функции [readFile()](https://ru.code-maven.com/reading-a-file-with-nodejs) используются для операции чтения.
 
 ```js
 readFile(Path, Options, Callback);
@@ -626,6 +625,20 @@ console.log(parseInt("es6", 10)); //NaN
 > Этот оператор позволяет вставлять выражения, которые производят дополнительные действия, в места, где ожидается undefined.
 
 > Оператор void часто используется для получения примитивного значения undefined, используя "void(0)" (что эквивалентно "void 0"). В подобных случаях можно просто использовать глобальную переменную undefined (предполагая, что её значение по умолчанию не было изменено).
+
+Когда браузер переходит по `javascript: URI`, он вычисляет код в URI и заменяет содержание страницы возвращенным значением, если оно не равно `undefined`. Можно воспользоваться оператором `void` для возврата `undefined`. Например:
+
+```html
+<a href="javascript:void(0);">
+  Click here to do nothing
+</a>
+
+<a href="javascript:void(document.body.style.backgroundColor='green');">
+  Click here for green background
+</a>
+```
+
+Однако заметим, что не рекомендуется использовать псевдо-протокол `javascript:`. Лучше прибегнуть к другим альтернативам, таким, как обработчики событий.
 
 ---
 
