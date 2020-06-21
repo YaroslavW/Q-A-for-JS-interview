@@ -807,3 +807,27 @@ for (let i = 1; i <= 100; i++) {
 ---
 
 ## 48. Какие инструменты и методы вы используете при отладке кода?
+
+### React и Redux:
+
+- [React Devtools](https://github.com/facebook/react-devtools)
+- [Redux Devtools](https://github.com/reduxjs/redux-devtools)
+
+### Vue:
+
+- [Vue Devtools](https://github.com/vuejs/vue-devtools)
+
+### JavaScript:
+
+- [Chrome Devtools](https://medium.com/hackernoon/twelve-fancy-chrome-devtools-tips-dc1e39d10d9d)
+- Выражение `debugger`
+- Отладка при помощи старого доброго `console.log`
+
+Ссылки
+
+- https://hackernoon.com/twelve-fancy-chrome-devtools-tips-dc1e39d10d9d
+- https://raygun.com/blog/javascript-debugging/
+
+---
+
+## 49.
