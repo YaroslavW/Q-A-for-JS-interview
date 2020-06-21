@@ -830,4 +830,10 @@ for (let i = 1; i <= 100; i++) {
 
 ---
 
-## 49.
+## 49. Какие языковые конструкции вы используете для итерации по свойствам объекта и элементам массива?
+
+### Для объектов:
+
+- `for-in` циклы — `for (var property in obj) { console.log(property); }`. Тем не менее, он также будет перебирать его унаследованные свойства, и вам нужно добавить проверку `obj.hasOwnProperty(property)` перед его использованием.
+- `Object.keys() — Object.keys(obj).forEach(function (property) { … }). Object.keys()`- это статический метод, который возвращает все перечисляемые свойства объекта.
+- `Object.getOwnPropertyNames() — Object.getOwnPropertyNames(obj).forEach(function (property) { … }). Object.getOwnPropertyNames()` — это статический метод, который возвращает все перечисляемые и неперечисляемые свойства объекта.
