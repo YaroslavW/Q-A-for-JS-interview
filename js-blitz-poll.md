@@ -869,4 +869,16 @@ for (let [index, elem] of arr.entries()) {
 
 ---
 
-## 51.
+## 51. Что такое цикл событий (`event loop`)? В чем разница между стеком вызовов (`call stack`) и очередью событий (`task queue`)?
+
+Цикл событий — это однопоточный цикл, который контролирует стек вызовов и проверяет, есть ли какая-либо работа, которую необходимо выполнить в очереди задач. Если стек вызовов пуст и в очереди задач есть `callback`-функции, то функция удаляется из очереди и помещается в стек вызовов для выполнения.
+Рекомендую ознакомиться с [докладом о цикле событий от Philip Robert](https://2014.jsconf.eu/speakers/philip-roberts-what-the-heck-is-the-event-loop-anyway.html). Это одно из самых популярных видео о JavaScript.
+
+Ссылки
+
+- https://2014.jsconf.eu/speakers/philip-roberts-what-the-heck-is-the-event-loop-anyway.html
+- http://theproactiveprogrammer.com/javascript/the-javascript-event-loop-a-stack-and-a-queue/
+
+---
+
+## 52.Объясните разницу при использовании `foo` в `function foo() {}` и `var foo = function() {}`
