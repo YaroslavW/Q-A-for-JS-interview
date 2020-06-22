@@ -910,3 +910,70 @@ var foo = function () {
 ---
 
 ## 53. В чем различие между переменными, созданными при помощи `let`, `var` и `const`?
+
+Переменные, объявленные при помощи ключевого слова `var`, относятся к области видимости функции, в которой они созданы. Или, если они созданы вне какой-либо функции — к глобальному объекту. `let` и `const` относятся к блочной области видимости — это означает, что они доступны только в пределах ближайшего набора фигурных скобок (функция, блок `if-else` или цикл `for`).
+
+```js
+function foo() {
+  // Все переменные доступны внутри функции.
+  var bar = "bar";
+  let baz = "baz";
+  const qux = "qux";
+  console.log(bar); // bar
+  console.log(baz); // baz
+  console.log(qux); // qux
+}
+console.log(bar); // ReferenceError: bar is not defined
+console.log(baz); // ReferenceError: baz is not defined
+console.log(qux); // ReferenceError: qux is not defined
+if (true) {
+  var bar = "bar";
+  let baz = "baz";
+  const qux = "qux";
+}
+// переменные, объявленные при помощи var, доступны в любом месте функции.
+console.log(bar); // bar
+// переменные, объявленные при помощи let и const не доступны вне блока, в котором были определены.
+console.log(baz); // ReferenceError: baz is not defined
+console.log(qux); // ReferenceError: qux is not defined
+```
+
+`var` позволяет поднимать переменные, что означает, что на них можно ссылаться в коде до их объявления. `let` и `const` не позволяют этого, и выдают ошибку.
+
+```js
+console.log(foo); // undefined
+var foo = "foo";
+console.log(baz); // ReferenceError: can’t access lexical declaration 'baz' before initialization
+let baz = "baz";
+console.log(bar); // ReferenceError: can’t access lexical declaration 'bar' before initialization
+const bar = "bar";
+```
+
+Переопределение переменной с помощью `var` не вызовет ошибку, в отличие от `let` и `const`.
+
+```js
+var foo = "foo";
+var foo = "bar";
+console.log(foo); // “bar”
+let baz = "baz";
+let baz = "qux"; // Uncaught SyntaxError: Identifier ‘baz’ has already been declared
+```
+
+`let` отличается от const тем, что изменять значение `const` нельзя.
+
+```js
+// Это нормально.
+let foo = "foo";
+foo = "bar";
+// Это вызывает исключение.
+const baz = "baz";
+baz = "qux";
+```
+
+Ссылки
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
+
+## 54. В чем разница между классом в ES6 и функцией-конструктором в ES5?
