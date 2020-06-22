@@ -977,3 +977,51 @@ baz = "qux";
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
 
 ## 54. В чем разница между классом в ES6 и функцией-конструктором в ES5?
+
+Для начала посмотрим на примеры:
+
+```js
+// ES5 функция-конструктор
+function Person(name) {
+  this.name = name;
+}
+// ES6 класс
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+```
+
+Они выглядят довольно похоже, если рассматривать простые конструкторы.
+Основное отличие в конструкторе возникает при использовании наследования. Если мы хотим создать класс `Student` (который будет являться подклассом класса `Person`) и добавить поле `studentId`, то, в дополнение к вышеописанному, мы должны сделать следующее:
+
+```js
+// ES5 функция-конструктор
+function Student(name, studentId) {
+  // Вызов конструктора суперкласса для инициализации производных от суперкласса членов.
+  Person.call(this, name);
+  // Инициализация собственных членов подкласса.
+  this.studentId = studentId;
+}
+Student.prototype = Object.create(Person.prototype);
+Student.prototype.constructor = Student;
+// ES6 класс
+class Student extends Person {
+  constructor(name, studentId) {
+    super(name);
+    this.studentId = studentId;
+  }
+}
+```
+
+Наследование в синтаксисе ES5 является намного более многословным, а в ES6 более понятное и усваиваемое.
+
+Ссылки
+
+- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance
+- https://eli.thegreenplace.net/2013/10/22/classical-inheritance-in-javascript-es5
+
+---
+
+## 55.Можете ли вы привести пример использования стрелочных функции =>? Чем они отличаются от других функций?
