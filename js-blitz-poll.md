@@ -1071,3 +1071,43 @@ sayNameFromWindow2(); // John
 ## 57.Дайте определение функции высшего порядка
 
 Функция высшего порядка — это любая функция, которая принимает одну или несколько функций в качестве аргументов, которые она использует для работы с данными и/или возвращает функцию в качестве результата. Функции высшего порядка предназначены для абстрагирования некоторой операции, которая выполняется повторно. Классическим примером является метод `map`, который принимает массив и функцию в качестве аргументов. Затем `map` использует эту функцию для преобразования каждого элемента в массиве, возвращая новый массив с преобразованными данными. Другими популярными примерами в JavaScript являются `forEach`, `filter` и `reduce`. Функции высшего порядка используют не только для манипуляций с массивами, но также и для возврата функции из другой функции, например при использовании `Function.prototype.bind`.
+
+#### Map
+
+Допустим, у нас есть массив с именами, которые нам нужны о преобразовать в верхний регистр.
+
+```js
+const names = ["irish", "daisy", "anna"];
+```
+
+Императивное решение будет выглядеть так:
+
+```js
+const transformNamesToUppercase = function (names) {
+  const results = [];
+  for (let i = 0; i < names.length; i++) {
+    results.push(names[i].toUpperCase());
+  }
+  return results;
+};
+transformNamesToUppercase(names); // ['IRISH', 'DAISY', 'ANNA']
+```
+
+Воспользууемся `.map(transformerFn)`, чтобы сделать код декларативным и более коротким:
+
+```js
+const transformNamesToUppercase = function (names) {
+  return names.map((name) => name.toUpperCase());
+};
+transformNamesToUppercase(names); // ['IRISH', 'DAISY', 'ANNA']
+```
+
+Ссылки
+
+- https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99
+- https://hackernoon.com/effective-functional-javascript-first-class-and-higher-order-functions-713fde8df50a
+- https://eloquentjavascript.net/05_higher_order.html
+
+---
+
+## 58.
