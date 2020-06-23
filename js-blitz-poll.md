@@ -1031,3 +1031,41 @@ class Student extends Person {
 ---
 
 ## 56. В чем преимущество использования стрелочных функций для метода в конструкторе?
+
+Основным преимуществом использования стрелочной функции в качестве метода внутри конструктора является то, что значение `this` устанавливается во время создания функции и не может измениться после этого. Таким образом, когда конструктор используется для создания нового объекта, `this` всегда будет ссылаться на этот объект. Например, допустим, у нас есть конструктор `Person`, который принимает имя - `name` в качестве аргумента, имеет два метода для вывода в консоль этого имени, один в качестве обычной функции, а другой в качестве стрелочной:
+
+```js
+const Person = function(firstName) {
+  this.firstName = firstName;
+  this.sayName1 = function() { console.log(this.firstName); };
+  this.sayName2 = () => { console.log(this.firstName); };
+};
+const john = new Person(‘John’);
+const dave = new Person(‘Dave’);
+john.sayName1(); // John
+john.sayName2(); // John
+// У обычной функции значение `this` может быть изменено, но у стрелочной функции нет
+john.sayName1.call(dave); // Dave (потому что ‘this’ сейчас ссылается на объект dave)
+john.sayName2.call(dave); // John
+john.sayName1.apply(dave); // Dave (потому что ‘this’ сейчас ссылается на объект dave)
+john.sayName2.apply(dave); // John
+john.sayName1.bind(dave)(); // Dave (потому что ‘this’ сейчас ссылается на объект dave)
+john.sayName2.bind(dave)(); // John
+var sayNameFromWindow1 = john.sayName1;
+sayNameFromWindow1(); // undefined (потому что ‘this’ сейчас ссылается на объект window)
+var sayNameFromWindow2 = john.sayName2;
+sayNameFromWindow2(); // John
+```
+
+Смысл заключается в том, что `this` можно изменить для обычной функции, но для стрелочных функций контекст всегда остается неизменным. Поэтому, даже если вы передаете стрелочную функцию в разные части вашего приложения, вам не нужно беспокоиться об изменении контекста.
+
+Это может быть особенно полезно в классовых React-компонентах. Если вы определяете метод класса для чего-то такого, как обработчик клика, используя обычную функцию, а затем передаете этот обработчик в дочерний компонент в качестве `prop`, вам также необходимо привязать `this` в конструкторе родительского компонента , Если вместо этого вы используете стрелочную функцию, то нет необходимости привязывать `this`, так как метод автоматически получит свое значение `this` из замыкающего лексического контекста. (Прочитайте эту статью о стрелочных функциях: [https://medium.com/@machnicki/handle-events-in-react-with-arrow-functions-ede88184bbb](https://medium.com/@machnicki/handle-events-in-react-with-arrow-functions-ede88184bbb))
+
+Ссылки
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+- https://medium.com/@machnicki/handle-events-in-react-with-arrow-functions-ede88184bbb
+
+---
+
+## 57.Дайте определение функции высшего порядка
