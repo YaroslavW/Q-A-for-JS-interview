@@ -1148,4 +1148,68 @@ console.log(q); // true
 
 ---
 
-## 59.
+## 59. Шаблонные строки в ES6 намного упрощают создание строк, можете ли вы привести пример их использования?
+
+Шаблонные строки помогают упростить строковую строк или включение переменных в строку. До ES2015 писали так:
+
+```js
+var person = { name: ‘Tyler’, age: 28 };
+console.log(‘Hi, my name is ‘ + person.name + ‘ and I am ‘ + person.age + ‘ years old!’);
+// ‘Hi, my name is Tyler and I am 28 years old!’
+```
+
+С приходом шаблонных строк в ES6 стало намного проще:
+
+```js
+const person = { name: ‘Tyler’, age: 28 };
+console.log(`Hi, my name is ${person.name} and I am ${person.age} years old!`);
+// ‘Hi, my name is Tyler and I am 28 years old!’
+```
+
+Обратите внимание, что для шаблонных строк используются обратные кавычки, а не простые. Переменные добавляются в подстановки `${}`, обозначаемые знаком доллара и фигурными скобками.
+Второй пример использования заключается в создании многострочных литералов. До ES2015 перенос осуществлялся следующим образом:
+
+```js
+console.log(‘This is line one.\nThis is line two.’);
+// This is line one.
+// This is line two.
+```
+
+Или же, чтобы не приходилось прокручивать длинную строку в текстовом редакторе, можно было разбить код на несколько строк в коде, таким образом:
+
+```js
+console.log(‘This is line one.\n’ +
+‘This is line two.’);
+// This is line one.
+// This is line two.
+```
+
+Однако шаблонные строки сохраняют любой интервал, который вы добавляете к ним. Например, чтобы создать тот же многострочный литерал, который мы создали выше, вы можете просто написать:
+
+```js
+console.log(`This is line one.
+This is line two.`);
+// This is line one.
+// This is line two.
+```
+
+Еще одним вариантом использования шаблонных строк будет использование в качестве замены библиотек шаблонизации для интерполяции переменных:
+
+```js
+const person = { name: ‘Tyler’, age: 28 };
+document.body.innerHTML = `
+  <div>
+    <p>Name: ${person.name}</p>
+    <p>Name: ${person.age}</p>
+  </div>
+```
+
+**Обратите внимание, что ваш код может быть восприимчив к XSS при использовании `.innerHTML`. Очищайте ваши данные перед отображением, если они получены от пользователя!**
+
+Ссылки
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
+---
+
+## 60.
