@@ -1110,4 +1110,42 @@ transformNamesToUppercase(names); // ['IRISH', 'DAISY', 'ANNA']
 
 ---
 
-## 58.
+## 58. Можете ли вы привести пример деструктуризации объекта или массива?
+
+Деструктуризация — это выражение, доступное в ES6, которое предоставляет краткий и удобный способ извлекать значения из объектов или массивов и помещать их в отдельные переменные.
+
+#### Деструктуризация массива
+
+```js
+// Присваивание переменной
+const foo = [‘one’, ‘two’, ‘three’];
+const [one, two, three] = foo;
+console.log(one); // “one”
+console.log(two); // “two”
+console.log(three); // “three”
+// Перестановка переменных местами
+let a = 1;
+let b = 3;
+[a, b] = [b, a];
+console.log(a); // 3
+console.log(b); // 1
+```
+
+#### Деструктуризация объекта
+
+```js
+// Присваивание переменной
+const o = { p: 42, q: true };
+const { p, q } = o;
+console.log(p); // 42
+console.log(q); // true
+```
+
+Ссылки
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+- https://ponyfoo.com/articles/es6-destructuring-in-depth
+
+---
+
+## 59.
