@@ -1212,4 +1212,77 @@ document.body.innerHTML = `
 
 ---
 
-## 60.
+## 60. Можете ли вы привести пример каррированной функции (curry function) и в чем их преимущество?
+
+Каррирование — это паттерн, где функция с более чем одним параметром разбивается на несколько функций, которые при последовательном вызове будут накапливать все необходимые параметры по одному. Этот метод может быть полезен для облегчения чтения и написания кода, написанного в функциональном стиле. Важно отметить, что каррированная функция должна начинаться как одна функция, а затем разбиваться на последовательность функций, каждая из которых принимает один параметр.
+
+```js
+function curry(fn) {
+  if (fn.length === 0) {
+    return fn;
+  }
+  function _curried(depth, args) {
+    return function(newArgument) {
+      if (depth — 1 === 0) {
+        return fn(…args, newArgument);
+      }
+      return _curried(depth — 1, […args, newArgument]);
+    };
+  }
+  return _curried(fn.length, []);
+}
+function add(a, b) {
+  return a + b;
+}
+var curriedAdd = curry(add);
+var addFive = curriedAdd(5);
+var result = [0, 1, 2, 3, 4, 5].map(addFive); // [5, 6, 7, 8, 9, 10]
+```
+
+Ссылки
+
+- https://hackernoon.com/currying-in-js-d9ddc64f162e
+
+---
+
+## 61. В чем преимущества использования `spread` оператора и чем он отличается от `rest` оператора?
+
+`Spread` оператор синтаксиса ES6 очень полезен при написании кода в функциональном стиле, поскольку мы можем легко создавать копии массивов или объектов, не прибегая к `Object.create`, `slice` или функции библиотеки. Эта языковая функция часто используется в проектах с Redux и rx.js.
+
+```js
+function putDookieInAnyArray(arr) {
+  return […arr, ‘dookie’];
+}
+const result = putDookieInAnyArray([‘I’, ‘really’, “don’t”, ‘like’]); // [“I”, “really”, “don’t”, “like”, “dookie”]
+const person = {
+  name: ‘Todd’,
+  age: 29,
+};
+const copyOfTodd = { …person };
+```
+
+В свою очередь, `rest` оператор синтаксиса ES6 позволяет в сокращенном виде указывать неопределенное количество аргументов, передаваемых в функцию. Можно сказать, что он противоположен `spread` оператору: собирает данные и добавляет их в массив, вместо разделения массива данных. Он используется в аргументах функций, а также при деструктуризации массивов и объектов.
+
+```js
+function addFiveToABunchOfNumbers(…numbers) {
+  return numbers.map(x => x + 5);
+}
+const result = addFiveToABunchOfNumbers(4, 5, 6, 7, 8, 9, 10); // [9, 10, 11, 12, 13, 14, 15]
+const [a, b, …rest] = [1, 2, 3, 4]; // a: 1, b: 2, rest: [3, 4]
+const { e, f, …others } = {
+  e: 1,
+  f: 2,
+  g: 3,
+  h: 4,
+}; // e: 1, f: 2, others: { g: 3, h: 4 }
+```
+
+Ссылки
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+---
+
+## 62.
