@@ -1118,7 +1118,7 @@ transformNamesToUppercase(names); // ['IRISH', 'DAISY', 'ANNA']
 
 ```js
 // Присваивание переменной
-const foo = [‘one’, ‘two’, ‘three’];
+const foo = ["one", "two", "three"];
 const [one, two, three] = foo;
 console.log(one); // “one”
 console.log(two); // “two”
@@ -1145,6 +1145,7 @@ console.log(q); // true
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 - https://ponyfoo.com/articles/es6-destructuring-in-depth
+- https://abcinblog.blogspot.com/2018/05/es6-3.html
 
 ---
 
@@ -1153,15 +1154,17 @@ console.log(q); // true
 Шаблонные строки помогают упростить строковую строк или включение переменных в строку. До ES2015 писали так:
 
 ```js
-var person = { name: ‘Tyler’, age: 28 };
-console.log(‘Hi, my name is ‘ + person.name + ‘ and I am ‘ + person.age + ‘ years old!’);
+var person = { name: "Tyler", age: 28 };
+console.log(
+  "Hi, my name is " + person.name + " and I am " + person.age + " years old!"
+);
 // ‘Hi, my name is Tyler and I am 28 years old!’
 ```
 
 С приходом шаблонных строк в ES6 стало намного проще:
 
 ```js
-const person = { name: ‘Tyler’, age: 28 };
+const person = { name: "Tyler", age: 28 };
 console.log(`Hi, my name is ${person.name} and I am ${person.age} years old!`);
 // ‘Hi, my name is Tyler and I am 28 years old!’
 ```
@@ -1170,7 +1173,7 @@ console.log(`Hi, my name is ${person.name} and I am ${person.age} years old!`);
 Второй пример использования заключается в создании многострочных литералов. До ES2015 перенос осуществлялся следующим образом:
 
 ```js
-console.log(‘This is line one.\nThis is line two.’);
+console.log("This is line one.\nThis is line two.");
 // This is line one.
 // This is line two.
 ```
@@ -1178,8 +1181,7 @@ console.log(‘This is line one.\nThis is line two.’);
 Или же, чтобы не приходилось прокручивать длинную строку в текстовом редакторе, можно было разбить код на несколько строк в коде, таким образом:
 
 ```js
-console.log(‘This is line one.\n’ +
-‘This is line two.’);
+console.log("This is line one.\n" + "This is line two.");
 // This is line one.
 // This is line two.
 ```
@@ -1196,7 +1198,7 @@ This is line two.`);
 Еще одним вариантом использования шаблонных строк будет использование в качестве замены библиотек шаблонизации для интерполяции переменных:
 
 ```js
-const person = { name: ‘Tyler’, age: 28 };
+const person = { name: 'Tyler', age: 28 };
 document.body.innerHTML = `
   <div>
     <p>Name: ${person.name}</p>
@@ -1209,10 +1211,11 @@ document.body.innerHTML = `
 Ссылки
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+- https://abcinblog.blogspot.com/2018/05/es6-3.html
 
 ---
 
-## 60. Можете ли вы привести пример каррированной функции (curry function) и в чем их преимущество?
+## 60. Можете ли вы привести пример каррированной функции (`curry function`) и в чем их преимущество?
 
 Каррирование — это паттерн, где функция с более чем одним параметром разбивается на несколько функций, которые при последовательном вызове будут накапливать все необходимые параметры по одному. Этот метод может быть полезен для облегчения чтения и написания кода, написанного в функциональном стиле. Важно отметить, что каррированная функция должна начинаться как одна функция, а затем разбиваться на последовательность функций, каждая из которых принимает один параметр.
 
@@ -1251,11 +1254,11 @@ var result = [0, 1, 2, 3, 4, 5].map(addFive); // [5, 6, 7, 8, 9, 10]
 
 ```js
 function putDookieInAnyArray(arr) {
-  return […arr, ‘dookie’];
+  return […arr, 'dookie'];
 }
-const result = putDookieInAnyArray([‘I’, ‘really’, “don’t”, ‘like’]); // [“I”, “really”, “don’t”, “like”, “dookie”]
+const result = putDookieInAnyArray(['I', 'really', "don’t", 'like']); // [“I”, “really”, “don’t”, “like”, “dookie”]
 const person = {
-  name: ‘Todd’,
+  name: 'Todd',
   age: 29,
 };
 const copyOfTodd = { …person };
@@ -1282,6 +1285,7 @@ const { e, f, …others } = {
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+- https://abcinblog.blogspot.com/2018/05/es6-1.html
 
 ---
 
