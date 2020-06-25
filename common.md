@@ -2456,6 +2456,10 @@ ECMAScript - это спецификация, определенная в ста
 - Babel - один из самых популярных javascript-транспортеров.
 - Babel в основном используется для преобразования кода ES6 + (ECMAScript 2015+) в обратно совместимую версию JavaScript, которая может быть запущена старыми механизмами JavaScript.
 
+Подробнее:
+
+- https://abcinblog.blogspot.com/2018/09/es6.html
+
 ---
 
 ## 6. Что такое Webpack?
@@ -2535,6 +2539,13 @@ myArray = ["jQuery"];
 //Uncaught TypeError: Присвоение постоянной переменной.
 ```
 
+Подробнее:
+
+- https://abcinblog.blogspot.com/2018/09/es6-let-ii.html
+- https://abcinblog.blogspot.com/2018/09/es6-const-let-variii.html
+- https://github.com/YaroslavW/trening-js/blob/master/Texts/ES6/es6-part1.md
+- https://abcinblog.blogspot.com/2018/05/es6-1.html
+
 `Object.freeze()`
 
 > `Object.freeze` работает со значениями и делает объект неизменным.
@@ -2603,6 +2614,8 @@ console.log(total(20,30)); // 50
 Подробнее:
 
 - https://abcinblog.blogspot.com/2018/09/es6-xi.html
+- https://abcinblog.blogspot.com/2018/05/es6-1.html
+- https://github.com/YaroslavW/trening-js/blob/master/Texts/ES6/es6-part1.md
 
 ---
 
@@ -2637,6 +2650,8 @@ console.log(TempBody);
 Подробнее:
 
 - https://abcinblog.blogspot.com/2018/09/es6-template-strings-v.html
+- https://abcinblog.blogspot.com/2018/05/es6-1.html
+- https://github.com/YaroslavW/trening-js/blob/master/Texts/ES6/es6-part1.md
 
 ---
 
@@ -2658,6 +2673,7 @@ var myObject = {
 Подробнее:
 
 - https://abcinblog.blogspot.com/2018/09/es6-viii.html
+- https://github.com/YaroslavW/trening-js/blob/master/Texts/ES6/es6-part2.md
 
 ---
 
@@ -2675,6 +2691,10 @@ let addNumbers = (a, b, c = 0) => {
 console.log(addNumbers(1, 2, 2)); //5
 console.log(addNumbers(5, 20)); //25
 ```
+
+Подробнее:
+
+- https://abcinblog.blogspot.com/2018/09/es6-vi.html
 
 ---
 
@@ -2698,7 +2718,7 @@ console.log(last_name); // Tutorials
 
 - https://abcinblog.blogspot.com/2018/09/es6-xii.html
 - https://abcinblog.blogspot.com/2018/09/es6-xiii.html
--
+- https://github.com/YaroslavW/trening-js/blob/master/Texts/ES6/es6-part1.md
 
 ---
 
@@ -2714,6 +2734,11 @@ const s = [...t, 4, 5, 6];
 console.log(s);
 // [1, 2, 3, 4, 5, 6];
 ```
+
+Подробне:
+
+- https://abcinblog.blogspot.com/2018/05/es6-1.html
+- https://abcinblog.blogspot.com/2018/09/es6-spread-operator-iv.html
 
 **Пример: - Удалить дубликаты элементов из массива с помощью ES6 `Set`?**
 
@@ -2732,6 +2757,10 @@ console.log(removeDuplicates(numbers));
 ```
 
 Набор - `Set` был введен в ES6 и похож на наборы, с которыми мы сталкиваемся в математике: они не могут иметь дубликаты. После этого мы просто конвертируем `Set` обратно в массив, используя оператор распространения - `...`.
+
+Подробне:
+
+- https://abcinblog.blogspot.com/2018/05/es6-1.html
 
 ---
 
@@ -2758,6 +2787,7 @@ console.log(userObj.getUserDetails());
 
 - https://abcinblog.blogspot.com/2018/09/es6-ix.html
 - https://abcinblog.blogspot.com/p/blog-page_15.html#jsphp
+- https://github.com/YaroslavW/trening-js/blob/master/Texts/ES6/es6-part1.md
 
 ---
 
@@ -2837,6 +2867,7 @@ promise
 
 - https://abcinblog.blogspot.com/2018/09/es6-promise-xiv-1.html
 - https://abcinblog.blogspot.com/2018/09/es6-promisesxiv-2.html
+- https://github.com/YaroslavW/trening-js/blob/master/Texts/ES6/es6-part3.md
 
 ---
 
@@ -2859,6 +2890,10 @@ console.log(hash);
 // "Learn Full Stack Tutorials free Online, Javascript ES6 Interview Questions",
 //  1 => 200}
 ```
+
+Подробнее:
+
+- https://abcinblog.blogspot.com/2018/05/es6-3.html
 
 ---
 
@@ -2934,6 +2969,12 @@ console.log(myFunc.prototype);
 // undefined
 ```
 
+Подробнее:
+
+- https://abcinblog.blogspot.com/2018/05/es6-1.html
+- https://github.com/YaroslavW/trening-js/blob/master/Texts/ES6/es6-part1.md
+- https://abcinblog.blogspot.com/2018/09/es6-xi.html
+
 ---
 
 ## 9. Как бы вы фильтровали массив объектов в ES6?
@@ -2956,11 +2997,20 @@ length:3
 */
 ```
 
+Подробнее:
+
+- https://abcinblog.blogspot.com/2018/05/es6-3.html
+- https://abcinblog.blogspot.com/2019/01/js-es6-arrays.html
+
 ---
 
 ## 10. Что вы подразумеваете под IIFE - `Immediately Invoked Function Expressions`(выражениями с немедленным вызовом функций)?
 
 Выражения IIFE или немедленно вызванные функции - это выражения, которые выполняются сразу же после его создания. IIFEs используются, чтобы избежать чрезмерного использования глобального пространства имен, потому что все переменные, которые используются внутри IIFE, не могут быть просмотрены вне его области. Другими словами, IIFE - это шаблоны проектирования, также известные как самоисполняющиеся анонимные функции (Self Executing Anonymous Functions), поскольку они выполняются самостоятельно.
+
+Подробнее:
+
+- https://github.com/YaroslavW/trening-js/blob/master/Texts/ES6/es6-part3.md
 
 ---
 
