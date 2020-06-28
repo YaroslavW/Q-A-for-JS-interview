@@ -7988,4 +7988,695 @@ db._adminCommand("connPoolStats");
 
 ---
 
+Подробнее по этим вопросам:
+
+- https://abcinblog.blogspot.com/2018/10/nodejs-express-mongodb-i.html
+- https://abcinblog.blogspot.com/2018/10/nodejs-express-mongodb-ii.html
+- https://abcinblog.blogspot.com/2018/10/nodejs-express-mongodb-iii.html
+- https://abcinblog.blogspot.com/2018/12/nodeexpressmongodb.html
+
+---
+
+---
+
+# React.js Интервью Вопросы и ответы
+
+![React-logo](img/react-bliz-50.jpg)
+
+## 1. Что такое React.js?
+
+React js - это библиотека JavaScript с открытым исходным кодом, созданная Facebook для создания сложных интерактивных интерфейсов в веб-приложениях и мобильных приложениях.
+
+Стоит посмотреть мою статью о том, [Что нового в приложении Create React App 3](https://github.com/YaroslavW/react-short-notes/blob/master/texts/news_in_create_react_app3/Create-react-app-news.md#%D0%BF%D0%BE%D1%81%D0%BB%D0%B5-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%B8%D0%BD%D1%85-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9-creat-react-app-%D0%BD%D0%B5-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%D0%B5%D1%82%D1%81%D1%8F)
+
+Подробнее:
+
+- [Настройка окружения.](https://abcinblog.blogspot.com/2018/05/reactjs.html)
+- [React + Webpack 4 + Babel 7 Руководство по установке.](https://abcinblog.blogspot.com/2019/02/react-webpack-4-babel-7.html)
+- [React.js (2) Разбиваем на компоненты.](https://abcinblog.blogspot.com/2018/05/reactjs-2.html)
+- [React.js (3) Добавляем интерактивность.](https://abcinblog.blogspot.com/2018/05/reactjs-3.html)
+- [React.js (4) Отображение массивов. Атрибут key.](https://abcinblog.blogspot.com/2018/05/reactjs-4-key.html)
+- [React.js (5) Оформление. React + CSS](https://abcinblog.blogspot.com/2018/05/reactjs-5-react-css.html)
+- [React.js (6) Жизненный цикл компонентов.](https://abcinblog.blogspot.com/2018/05/reactjs-6.html)
+- [Методы жизненного цикла React 16 на русском.](https://abcinblog.blogspot.com/2019/08/react-16.html)
+- [React.js (7) shouldComponentUpdate(). Оптимизация.](https://abcinblog.blogspot.com/2018/05/reactjs-7-shouldcomponentupdate.html)
+- [React.js (8) Отладка](https://abcinblog.blogspot.com/2018/05/reactjs-8.html)
+- [React - шпаргалка.](https://abcinblog.blogspot.com/2019/08/react.html)
+- [React-Router простое руководство.](https://abcinblog.blogspot.com/2018/12/react-router.html)
+- [Redux - простое руководство.](https://abcinblog.blogspot.com/2018/12/redux.html)
+- [React - Интерактивная таблица. (I)](https://abcinblog.blogspot.com/2019/02/react-i.html)
+- [React - Интерактивная таблица. (II)](https://abcinblog.blogspot.com/2019/02/react-ii.html)
+- [Raect приложение с MLabDB ( I ).](https://abcinblog.blogspot.com/2019/03/raect-mlabdb-i.html)
+- [Raect приложение с MLabDB ( II ).](https://abcinblog.blogspot.com/2019/03/raect-mlabdb-ii.html)
+- [React хуки и функциональные компоненты.](https://abcinblog.blogspot.com/2019/05/react.html)
+- [React . Детальный обзор Context API.](https://abcinblog.blogspot.com/2020/05/react-context-api.html)
+- [React. Как использовать «useContext» в React Hooks.](https://abcinblog.blogspot.com/2020/05/react-usecontext-react-hooks.html)
+- [React-Сайт ( I ). Меню и слайдер.](https://abcinblog.blogspot.com/2019/05/react-i.html)
+- [React-Сайт ( II ). Инфо-основная секция.](https://abcinblog.blogspot.com/2019/05/react-ii.html)
+- [React-Сайт ( III ). Цены-локация секции.](https://abcinblog.blogspot.com/2019/06/react-iii.html)
+- [React-Сайт ( IV ). Навигация по странице. Деплой приложения](https://abcinblog.blogspot.com/2019/06/react-iv.html)
+- [Ошибки при работе c React state.](https://abcinblog.blogspot.com/2020/06/c-react-state.html)
+- [Next.js -руководство.](https://abcinblog.blogspot.com/2020/06/nextjs.html) или скачать в pdf с [Google Drive](https://drive.google.com/file/d/1JTMdYymYWsRgT0KCmiz3HQYXvCq6OnDp/view)
+- [21 техника оптимизации производительности для React.](https://github.com/YaroslavW/react-short-notes/blob/master/texts/21_%20Performance_Optimization_Techniques_for_React/text.md)
+- [4 пользовательских хука для ускорения вашего приложения React](https://github.com/YaroslavW/react-short-notes/blob/master/texts/4_custom_hooks_to_boost_your_react_app/4_custom_hooks_to_boost_your_react_app.md)
+- [5 способов написания стилей CSS в React.js](https://github.com/YaroslavW/react-short-notes/blob/master/texts/5_ways_to_write_css_styles_in_react/5_ways_to_write_css_styles_in_react.md)
+- [Введение в компоненты высшего порядка (HOC)](https://github.com/YaroslavW/react-short-notes/blob/master/texts/HOC/Introduction.md)
+- [Делаем setInterval декларативным с помощью React Hooks](https://github.com/YaroslavW/react-short-notes/blob/master/texts/Hooks-setInterval/hooks-setInterval.md)
+- [Как использовать Redux в ReactJS с реальными примерами.](https://github.com/YaroslavW/react-short-notes/blob/master/texts/How_to_use_Redux_in_ReactJS_with_real-life_examples/text.md)
+- [Коммуникация между сестринскими компонентами в React без использования Redux.](https://github.com/YaroslavW/react-short-notes/blob/master/texts/No-Redux_strategy_for_siblings_communication/no-redux_strategy_for_siblings_communication.md)
+- [Передача данных между родственными компонентами в React с использованием Context API и React Hooks.](https://github.com/YaroslavW/react-short-notes/blob/master/texts/Passing_data_between_sibling_components/passing_data_between_sibling_components.md)
+- [Что нового в приложении Create React App 3](https://github.com/YaroslavW/react-short-notes/blob/master/texts/news_in_create_react_app3/Create-react-app-news.md)
+- [Hooks, представленные в React-Router v5.1](https://github.com/YaroslavW/trening-js/blob/master/Texts/Hooks_React-Router/hooks_introduced_in_react-router.md)
+- [Шаблоны React.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8)
+  - [Функциональный компонент- Function component.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#function-component)
+  - [Destructuring props - Деструктуризация свойств.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#destruct_props)
+  - [Атрибуты распространения JSX - JSX spread attributes.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#jsx-spread-atr)
+  - [Объединение деструктуризированных props с другими значениями - Merge destructured props with other values.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#merge_props)
+  - [Условный рендеринг - Conditional rendering.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#conditional_rendering)
+  - [Children types.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#children_types)
+  - [Массив как дети - Array as children.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#array_children)
+  - [Функции как дети - Function as children.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#function_children)
+  - [Рендеринг свойств - Render prop.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#render_props)
+  - [Передача через детей - Children pass-throught.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#children_pass_throught)
+  - [Прокси-компонент - Proxy component.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#proxy_component)
+  - [Компонент стиля - Style component.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#style_component)
+  - [Переключатель событий - Event switch.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#event_switch)
+  - [Компонент шаблона (макета) - Layout component.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#layout_component)
+  - [Контейнерный компонент - Container component.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#container_component)
+  - [Компонент высшего порядка - Higher-order component.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#higher-order_component)
+  - [Подъем состояния - State hoisting.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#state_hosting)
+  - [Контролируемый ввод - Controlled input.](https://abc-react.blogspot.com/?fbclid=IwAR1P-LKK1I7jETFWAbdiM_Mwhw6ueSc9F0oU_-9iGMa-nPB8hKtxl5HOCo8#controlled_input)
+
+---
+
+## 2. Каковы особенности React.js?
+
+Основные характеристики React перечислены ниже:
+
+1. Виртуальный DOM: он использует виртуальный DOM вместо реального DOM.
+2. Рендеринг на стороне сервера: используется рендеринг на стороне сервера (SSR).
+3. Однонаправленный: следует за однонаправленным потоком данных или связыванием данных.
+4. Компоненты: используются повторно используемые компоненты пользовательского интерфейса.
+
+---
+
+## 3. Как установить React.js с помощью приложения Create React App?
+
+**Шаг 1**: Во-первых, установите создатель приложения реакции.
+Для Windows:
+
+```
+>> npm install -g create-react-app
+```
+
+Для Linux и Mac:
+
+```
+>> sudo npm install -g create-react-app
+```
+
+**Шаг 2**: Теперь создайте свой проект с помощью приложения реакт.
+
+```
+>> create-react-app myFirstReactProject
+```
+
+**Шаг 3**: Теперь перейдите в папку проекта и запустите ваше приложение / проект.
+
+```
+>> cd myFirstReactProject
+>> npm start
+```
+
+Примечание. Вы можете использовать другой менеджер пакетов, например, `yarn` и т. д.
+
+---
+
+## 4. В чем разница между NPM и NPX?
+
+NPM: A node package manager - менеджер пакетов node
+
+NPX: A npm package runner - запскающий npm-пакеты
+
+---
+
+## 5. Как указать порт для запуска проекта, основанного на Create-React-App?
+
+Есть два метода:
+
+1. Переменная среды
+2. `package.json`
+
+Если вы не хотите устанавливать **environment variable**, другой вариант - изменить сценарии, которые являются частью вашего `package.json`
+
+Для Windows:
+
+```
+>> "start": "set PORT=3006 && react-scripts start"
+```
+
+Для Linux & Mac:
+
+```
+>> "start": "PORT=3006 react-scripts start"
+
+OR
+
+>> "start": "export PORT=3006 react-scripts start"
+```
+
+---
+
+## 6. Что такое `props` в React?
+
+`Props` - это входные данные для компонентов. Это отдельные значения или объекты, содержащие набор значений, которые передаются компонентам при создании с использованием соглашения об именах, аналогичного атрибутам HTML-тегов. Вы можете передавать `props` из родительского компонента в дочерний компонент.
+
+---
+
+## 7. Что такое состояние - `state` в React?
+
+> Состояние компонента - это объект, который содержит некоторую информацию, которая может измениться за время существования компонента.
+
+```js
+class Message extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      message: "Welcome to React.js Interview Questions.",
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.state.message}</h1>
+      </div>
+    );
+  }
+}
+```
+
+---
+
+## 8. В чем разница между состоянием - `state` и реквизитом - `props`?
+
+`Props` - это свойства, реквизиты, передаваемые от родительского к дочернему компоненту, тогда как состояние - `state` управляется внутри самого компонента подобно переменным, объявленным внутри функции.
+
+---
+
+## 9. Что такое конструктор? и какова его главная цель?
+
+> Метод `constructor ()` вызывается только один раз во время начальной визуализации.
+
+В React.js конструктор используется для:
+
+- Инициализирующие значения - `props` и `state`.
+- Привязка методов обработчика событий к экземпляру.
+
+```js
+import React, { Component } from "react";
+class myComponent extends Component {
+  constructor(props) {
+    super(props);
+    // Don't call this.setState() here!
+    this.state = { counter: 0 };
+    this.handleClick = this.handleClick.bind(this);
+  }
+}
+```
+
+Примечание:
+
+1. Конструктор вызывается только один раз за полный жизненный цикл компонента.
+2. Конструктор - это единственное место, где вы должны назначить `this.state` напрямую. В других методах жизненного цикла React вы должны использовать `this.setState ()`.
+3. Если вы реализуете конструктор, вы должны вызывать `super (props)` перед любым другим оператором. если вы не будете вызывать `super (props)`, `this.props` будет неопределенным в компоненте, что может привести к ошибкам.
+
+---
+
+## 10. Обязательно ли определять конструктор для компонента React?
+
+Нет, это не обязательно. Т.е., если вы не инициализируете состояние и не привязываете методы, вам не нужно реализовывать конструктор для вашего компонента React.
+
+---
+
+## 11. Разница между конструктором и `getInitialState`?
+
+`getInitialState` принадлежит ES5, а конструктор -`constructor` - ES6.
+
+> `getInitialState` используется с `React.createClass`, а конструктор используется с `React.Component`.
+
+ES5
+
+```js
+var MyComponent = React.createClass({
+  getInitialState() {
+    return {
+      /* initial state */
+    };
+  },
+});
+```
+
+ES6
+
+```js
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      /* initial state */
+    };
+  }
+}
+```
+
+---
+
+## 12. Реакт ES6 Конструктор - `constructor` и ключевое слово - `super`?
+
+1. Нужно ли вызывать `super ()` внутри конструктора?
+   Ответ ДА, если вы хотите установить свойство или получить доступ к нему внутри конструктора, вам нужно вызвать `super ()`.
+
+```js
+class MyComponent extends React.Component {
+  constructor(props) {
+    this.name = "Hello"; // Error-  'this' is not allowed before super()
+  }
+  render() {
+    return <p> Name: {this.props.name}</p>;
+  }
+}
+```
+
+Итак, теперь мы понимаем, что нам нужно вызвать `super ()`, если нам нужно использовать `this` внутри конструктора.
+
+2. Как обстоят дела с `super()` vs `super(props)`?
+   `props` будет не определен внутри конструктора класса, если вы не будете вызывать `super (props)`.
+
+```js
+class MyComponent extends React.Component {
+	constructor(props){
+		super();
+		this.state = {
+		 name: this.props.name;
+     // here props would be undefined.
+		};
+	}
+	render() {
+		return(
+		 <p> Name: { this.state.name }</p>
+		);
+	}
+}
+```
+
+```js
+class MyComponent extends Component {
+	constructor(props){
+		super(props);
+		this.state = {
+			name: this.props.name;
+		};
+	}
+	render() {
+		return(
+		 <p> Name: { this.state.name }</p>
+		);
+	}
+}
+```
+
+---
+
+## 13. В чем разница между `super()` и `super(props)`?
+
+Если вы хотите получить доступ к `this.props` внутри конструктора, вам нужно передать параметр `props` в ключевое слово `super`.
+
+---
+
+## 14. Использует ли React.js HTML?
+
+Нет, он использует JSX.
+
+---
+
+## 15. Что такое JSX?
+
+> JSX означает JavaScript XML.
+
+React.js использует JSX для шаблонов вместо обычного JavaScript. Использовать его не обязательно, однако ниже приведены некоторые плюсы, которые поставляются с JSX.
+
+- JSX позволяет разработчикам размещать HTML-код внутри JavaScript.
+
+- JSX является типобезопасным, поэтому большинство ошибок можно обнаружить во время компиляции.
+
+```js
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <p>{"Welcome to React Js Interview Questions"}</p>
+      </div>
+    );
+  }
+}
+```
+
+---
+
+## 16. Как писать выражения и комментарии в JSX?
+
+**Выражения JavaScript**: Мы используем `{}` для написания выражений в коде JSX.
+
+**Комментарии**: при написании комментариев мы должны использовать фигурные скобки `{/*comment*/}` или `{//comment}`
+
+```js
+render() {
+  return (
+	 <div>
+		<h1>Expression & Comments in JSX:</h1>
+		<p>5 is equeal to {2+3}</p>
+		{//Single line Comment...}
+		{/*Multi-line comment...*/}
+	 </div>
+  );
+}
+```
+
+---
+
+## 17. Почему браузеры не могут читать JSX?
+
+Браузеры могут только читать объекты JavaScript, но JSX не является обычным объектом JavaScript. Вот почему браузеры не могут читать JSX. Для чтения JSX в браузерах в первую очередь нам необходимо преобразовать код JSX в объект JavaScript с помощью `Babel`, а затем передать его браузеру.
+
+---
+
+## 18. Соседние элементы JSX должны быть заключены в тег?
+
+Если вы передадите несколько тегов, то реакт выдаст ошибки, например: `Adjacent JSX elements be wrapped in an enclosing tag` - говорит нам о том, что смежные элементы в Реакт, должны быть обернуы в один тег.
+
+Посто помните, что реакт возвращает все в одном теге!
+
+Ошибка:
+
+```js
+class HelloWorld extends React.Component{
+ render(){
+	return(
+	 <h1>React.js Interview Questions</h1>
+	 <p>Hello, You can not use multiple tags like this</p>
+	)
+ }
+}
+```
+
+В приведенном выше примере, если вы передадите данные в метод рендеринга, как указано выше, это приведет к ошибке.
+
+Причина: потому что метод `render ()` принимает только JSX, поэтому вы можете передать все в одном теге. Таким образом, следующий пример является правильным способом написать это.
+
+```js
+class HelloWorld extends React.Component {
+  render() {
+    return (
+      <div classname="App">
+        <h1>React.js Interview Questions</h1>
+        <p>
+          Hello, You can use multiple tags like this wrapped into a single tag.
+        </p>
+      </div>
+    );
+  }
+}
+```
+
+---
+
+---
+
+# Intermediate
+
+## 19. Что такое компоненты?
+
+> Компоненты позволяют разделить пользовательский интерфейс на независимые, многократно используемые части и думать о каждой части по отдельности.
+
+**Есть два основных типа компонентов**:
+
+1. Функциональный компонент (компонент без состояния -Stateless Component) - только `props`, без состояния - `state`.
+2. Компонент класса (Stateful Component) - как `props`, так и состояние - `state`.
+
+**1. Functional Component: (Stateless)**
+
+```js
+function FunctionComponent(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+//In ES6 Style:
+
+const FunctionComponent = (props) => {
+  return <h1>Hello, {props.name}</h1>;
+};
+```
+
+**2. Class Component: (Stateful)**
+
+```js
+import React, { Component } from "react";
+
+class ClassComponent extends Component {
+  render() {
+    return (
+      <div classname="App">
+        <header>
+          <h1>Class Component</h1>
+        </header>
+        <p>Welcome to React's - Class Component</p>
+      </div>
+    );
+  }
+}
+export default ClassComponent;
+```
+
+Примечание:
+
+- Всегда начинайте названия компонентов с заглавной буквы.
+- React рассматривает компоненты, начинающиеся со строчных букв, как теги DOM.
+
+---
+
+## 20. В чем разница между контролируемым (`Controlled`) и неконтролируемым (`Uncontrolled`) компонентом?
+
+В контролируемом компоненте данные формы обрабатываются компонентом React. В неуправляемых компонентах данные формы обрабатываются самим DOM.
+
+| Особенности                                              | Контролируемые | Неконтролируемые |
+| :------------------------------------------------------- | :------------: | ---------------: |
+| Одноразовое извлечение значения (например, при отправке) |       ✅       |               ✅ |
+| Подтверждение при отправке                               |       ✅       |               ✅ |
+| Мгновенная проверка поля                                 |       ❌       |               ✅ |
+| Условное отключение кнопки отправки                      |       ❌       |               ✅ |
+| Динамические входы                                       |       ❌       |               ✅ |
+
+---
+
+## 21. Почему имена React - компонентов должны начинаться с заглавной буквы?
+
+В JSX, если вы напишите имя компонента строчными буквами, он будет считать его обычным HTML-тегом, поэтому разработчик должен следовать рекомендациям реагировать на ошибки.
+
+---
+
+## 22. Каковы основные преимущества использования React.js?
+
+Ниже приведен список некоторых основных преимуществ использования React.js:
+
+1. Производительность: У React.js действительно хорошая производительность, потому что React Js использует virtual-DOM
+2. Рендеринг: это рендеринг как на стороне сервера, так и на стороне клиента.
+3. Возможность повторного использования: React Js - это все о компонентах. Таким образом, React js предоставляет разработчикам возможность больше времени использовать и создавать общие абстракции, настраивая создание, распространение и потребление изолированных многократно используемых частей.
+4. JSX: JSX облегчает чтение кода ваших компонентов
+5. Привязка данных: React Js использует одностороннюю привязку данных или однонаправленный поток данных
+6. Тестируемость: легко тестировать и интегрировать некоторые инструменты, такие как Jest.
+7. Удобство обслуживания: оно обеспечивает удобочитаемость и облегчает обслуживание.
+8. Лучшее сочетание технологий: React наилучшим образом использует HTML и JavaScript, идеально сочетая их, а также использует CSS, чтобы представить ваше приложение наилучшим образом.
+9. Интеграция с другими фреймворками: легко интегрировать с другими фреймворками, такими как Backbone.js, Meteor, Angular и т. д.
+
+---
+
+## 23. В каких компонентах метода жизненного цикла следует выполнять вызов `AJAX`?
+
+> Вы должны сделать запрос AJAX в методе `componentDidMount ()`.
+
+Ниже представенны лучшие библиотеки для выполнения вызовов `AJAX`в React.js:
+
+1. `Fetch` - это новый простой и стандартизированный API, основанный на обещаниях, для выполнения вызовов AJAX и замены XMLHttpRequest
+2. `Axios`- это HTTP-клиент на основе Promise для браузера и node.js
+3. `jQuery \$ .ajax` - это основной способ совершать AJAX-вызовы.
+4. `Superagent` - это легковесная библиотека AJAX API, созданная для лучшей читаемости и гибкости.
+
+---
+
+## 24. Что такое функция `render ()` и как она используется в React?
+
+> Все компоненты React (`Class Component`) имеют функцию `render ()`. Функция `render ()` возвращает только один реакт - элемент (компонент DOM). Если вы хотите вернуть несколько элементов HTML, они должны быть сгруппированы внутри одного тега HTML.
+
+1. `render ()` - наиболее широко используемый метод в жизненном цикле реакт.
+2. Метод `render` требуется при написании компонента React с использованием метода класса.
+3. Метод `render ()` вызывается по умолчанию, потому что он должен отображать разметку HTML или мы можем сказать что это синтаксис JSX.
+
+---
+
+## 25. Почему мы используем ключи - `keys` в React?
+
+`keys` помогают React определить, какие элементы были изменены, добавлены или удалены.
+
+```js
+const friuts = [0 => "Apple", 1 => "Orange", 2 => "Banana", 3 => "Mango"];
+const listItems = friuts.map((index, items) =>
+  <li key="{index}">
+    {items}
+  </li>
+);
+```
+
+---
+
+## 26. Что такое `React Events`?
+
+События реакт- это реакции, которые запускаются конкретными действиями пользователя, такими как нажатие кнопки, наведение мыши и т. д.
+
+---
+
+## 27. Что вы понимаете под `Virtual DOM`? Объясните его работу?
+
+> `Virtual DOM` - это представление `Real DOM`в памяти
+
+Другими словами, виртуальный DOM - это легкий объект JavaScript, который изначально является просто копией реального DOM.
+
+Как работает Virtual DOM:
+
+1. Всякий раз, когда какие-либо базовые данные изменяются, весь пользовательский интерфейс перерисовывается в представлении Virtual DOM.
+2. Теперь вычисляется разница между предыдущим представлением DOM и новым.
+3. Как только расчеты будут выполнены, реальный DOM будет обновляться только с теми нововведениями, которые действительно изменились.
+
+---
+
+## 28. Разница между реальным DOM и виртуальным DOM?
+
+| Реальный DOM                                 | Виртуальный DOM                          |
+| -------------------------------------------- | ---------------------------------------- |
+| Обновляется медленно.                        | Обновляется быстро                       |
+| Может напрямую обновлять HTML.               | Не может напрямую обновлять HTML.        |
+| Создает новый DOM, если элемент обновляется. | Обновляет JSX, если обновляется элемент. |
+| DOM манипулирование очень дорого             | DOM манипуляции очень просты.            |
+| Слишком большая потеря памяти.               | Нет потерь памяти.                       |
+
+---
+
+## 29. Чем React отличается от Angular?
+
+| Keys              |                      React                      |                                                             Angular |
+| :---------------- | :---------------------------------------------: | ------------------------------------------------------------------: |
+| Архитектура       |              Только вид -V из MVC               |                                                          Полная MVC |
+| Язык              |                       JSX                       |                                                         Type Script |
+| Рендеринг         |               На стороне сервера                | Рендеринг на стороне сервера <br />(Angularjs - Клиентская сторона) |
+| DOM               |           использует виртуальный DOM            |                                   использует реальный / обычный DOM |
+| Привязка данных   | однонаправленная: односторонняя привязка данных |                       Двунаправленная: двусторонняя привязка данных |
+| Отладка           |           Отладка во время компиляции           |                                         Отладка во время выполнения |
+| Легкость освоения |                     Низкая                      |                                                             Средняя |
+| Автор             |                    Facebook                     |                                                              Google |
+
+---
+
+---
+
+# Advanced
+
+## 30. Что такое `Redux`?
+
+`Redux` - это библиотека javascript для управления состоянием приложения.
+
+---
+
+## 31. Что такое `Reconciliation`?
+
+> `Reconciliation`- Согласование - это процесс, посредством которого React обновляет DOM.
+
+Всякий раз, когда изменяются реквизиты - `props` или состояние - `state` компонента, React.js решает, нужно ли обновление реальный DOM, сравнивая вновь возвращаемый элемент с ранее отрендеренным с помощью Virtual DOM. Если оба не равны, React обновляет DOM. Этот процесс называется «Reconciliation».
+
+Алгоритм, который реагирует на использование этого, называется - алгоритм дифференцирования.
+
+---
+
+## 32. `ESLint` и назвать некоторые популярные React-специфические линтеры?
+
+- ESLint - популярный JavaScript-линтер.
+- Linting tools, такие как ESLint, позволяют разработчикам обнаруживать проблемы с их кодом JavaScript, не выполняя его.
+- Одним из наиболее распространенных для React является пакет npm, называемый `eslint-plugin-react`.
+
+Преимущества использования ESLint
+
+- Вы найдете баги и ошибки, прежде чем они произойдут.
+- Вы потратите меньше времени на тестирование новых функций.
+- Ваш код (и код вашей команды) будет более согласованным.
+
+---
+
+## 33. Как мы можем найти версию React во время выполнения в браузере?
+
+```js
+const REACT_VERSION = React.version;
+```
+
+---
+
+## 34. Что такое крючки - `hooks`? Когда и где я буду использовать hooks?
+
+Hooks:
+Hooks - это новое дополнение в React 16.8. Hooks предоставляет разработчикам возможность, позволяющую им использовать состояние и другие функции React без написания класса.
+
+`useState` - это хук, который позволяет добавлять состояние React к функциональным (не имеющим состояния) компонентам.
+
+```js
+import React, { useState } from "react";
+
+function myFunction() {
+  // Code Snippets
+}
+```
+
+Когда я буду использовать Hooks?
+Если вы создаете функциональный компонент и если вам нужно добавить / использовать состояние внутри этого функционального компонента, то вы можете использовать хук внутри существующего функционального компонента.
+
+Где бы я использовал Hooks?
+Hooks должны использоваться только внутри функциональных компонентов.
+Hooks могут быть использованы внутри ваших собственных пользовательских `hooks`.
+
+---
+
+## 34. Что такое чистый компонент - `Pure Component`?
+
+> Чистый компонент рендерится только в том случае, если в реквизитах и состоянии происходят какие-либо реальные изменения
+
+---
+
+## 35. Какие средства отладки используются для тестирования приложений React?
+
+1. `Linters` (eslint, jslint) - линтеры.
+2. `Debuggers` (React Developer Tools) - дебагер.
+
+---
+
+## 36. Каковы основные недостатки использования React.js?
+
+Ниже приведены некоторые основные недостатки использования React.js:
+
+1. Он охватывает только часть 'View' в MVC (Model-View-Controller).
+2. React Js - это просто библиотека JavaScript, а не фреймворк.
+3. Это библиотека очень большая и требует времени, чтобы понять.
+   React использует встроенные шаблоны и JSX.
+
+React.js используется Facebook, Instagram, Netflix, PayPal, Apple и т. Д. Одной из наиболее важных причин может быть то, что он очень высок в ИТ-индустрии. Если вы хорошо знаете Reactjs, вы можете получить очень выгодные предложения IT-компаний.
+
+---
+
 ---
