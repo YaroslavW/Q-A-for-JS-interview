@@ -10343,7 +10343,7 @@ let sum = (a: number, b: number): number => {
 console.log(sum(20, 30)); //returns 50
 ```
 
-В приведенном выше,? `=>`? является лямбда-оператором - **lambda operator**, а (`a + b`) является телом функции, а (`a: number, b: number`) являются **inline** parameters.
+В приведенном выше примере, `=>` является лямбда-оператором - **lambda operator**, а (`a + b`) является телом функции, а (`a: number, b: number`) являются **inline parameters**.
 
 ---
 
